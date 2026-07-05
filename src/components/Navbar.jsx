@@ -39,14 +39,37 @@ function Navbar() {
           </span>
         </Link>
 
-        <button
-          type="button"
-          className="nav-toggle"
-          aria-label="Toggle menu"
-          onClick={() => setMenuOpen((o) => !o)}
-        >
-          ☰
-        </button>
+        <div className="nav-center">
+          <div className="nav-search">
+            <input
+              type="search"
+              placeholder="Search products…"
+              value={query}
+              onChange={(e) => setQuery(e.target.value)}
+              aria-label="Search products"
+            />
+            {query.trim() && (
+              <div className="search-results">
+                {matches.length > 0 ? (
+                  matches.map((p) => (
+                    <a
+                      key={p.id}
+                      href={`/products/${p.id}`}
+                      onClick={(e) => {
+                        e.preventDefault()
+                        goTo(p.id)
+                      }}
+                    >
+                      {p.name} <small>({p.gradeCode})</small>
+                    </a>
+                  ))
+                ) : (
+                  <div className="no-match">No matching products</div>
+                )}
+              </div>
+            )}
+          </div>
+        </div>
 
         <nav>
           <ul
@@ -70,35 +93,15 @@ function Navbar() {
           </ul>
         </nav>
 
-        <div className="nav-search">
-          <input
-            type="search"
-            placeholder="Search products…"
-            value={query}
-            onChange={(e) => setQuery(e.target.value)}
-            aria-label="Search products"
-          />
-          {query.trim() && (
-            <div className="search-results">
-              {matches.length > 0 ? (
-                matches.map((p) => (
-                  <a
-                    key={p.id}
-                    href={`/products/${p.id}`}
-                    onClick={(e) => {
-                      e.preventDefault()
-                      goTo(p.id)
-                    }}
-                  >
-                    {p.name} <small>({p.gradeCode})</small>
-                  </a>
-                ))
-              ) : (
-                <div className="no-match">No matching products</div>
-              )}
-            </div>
-          )}
-        </div>
+        <button
+          type="button"
+          className="nav-toggle"
+          aria-label="Toggle menu"
+          aria-expanded={menuOpen}
+          onClick={() => setMenuOpen((o) => !o)}
+        >
+          ☰
+        </button>
       </div>
     </header>
   )
