@@ -207,6 +207,7 @@
   content: '';
   position: absolute;
   inset: 0;
+  z-index: 1;
   background: linear-gradient(
     100deg,
     rgba(8, 29, 54, 0.95) 0%,
@@ -215,10 +216,72 @@
   );
 }
 
+/* Crossfading slide backgrounds */
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1.3s var(--ease-out);
+}
+
+.hero-bg.active {
+  opacity: 1;
+  animation: kenBurns 8s linear both;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Slide progress bars */
+.hero-progress {
+  position: absolute;
+  bottom: 1.7rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  display: flex;
+  gap: 0.6rem;
+}
+
+.hero-progress button {
+  position: relative;
+  width: 56px;
+  height: 5px;
+  border: none;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.28);
+  overflow: hidden;
+  cursor: pointer;
+  transition: background 0.25s;
+}
+
+.hero-progress button:hover {
+  background: rgba(255, 255, 255, 0.45);
+}
+
+.hero-progress button span {
+  position: absolute;
+  inset: 0;
+  border-radius: 3px;
+  background: linear-gradient(90deg, var(--color-accent), var(--color-accent-dark));
+  transform-origin: left;
+  transform: scaleX(0);
+}
+
+.hero-progress button.active span {
+  animation: progressFill linear both;
+}
+
 /* Floating granule dots */
 .hero-dots {
   position: absolute;
   inset: 0;
+  z-index: 1;
   pointer-events: none;
 }
 
@@ -1326,7 +1389,11 @@
   }
 
   .hero {
-    min-height: 520px;
+    min-height: 560px;
+  }
+
+  .hero-progress button {
+    width: 36px;
   }
 
   .section {

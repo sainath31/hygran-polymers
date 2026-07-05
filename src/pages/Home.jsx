@@ -2,7 +2,10 @@ import { Link } from 'react-router-dom'
 import Reveal from '../components/Reveal'
 import CountUp from '../components/CountUp'
 import Carousel from '../components/Carousel'
+import HeroSlider from '../components/HeroSlider'
 import heroFactory from '../assets/hero-factory.jpg'
+import granulesColors from '../assets/granules-colors.jpg'
+import productionLine from '../assets/production-line.jpg'
 import sustainability from '../assets/sustainability.jpg'
 import appCables from '../assets/app-cables.jpg'
 import appFootwear from '../assets/app-footwear.jpg'
@@ -50,6 +53,30 @@ const stats = [
   { end: 24, suffix: 'h', label: 'Quote Response Time' },
 ]
 
+const heroSlides = [
+  {
+    img: heroFactory,
+    kicker: 'Engineering Advanced PVC Compound Solutions for Tomorrow',
+    titleHead: 'Premium PVC Granules Manufacturer for',
+    titleAccent: 'Reliable Performance',
+    text: 'Delivering high quality Flexible & Rigid PVC Granules for Wire & Cable, Footwear, Automotive, Construction and Industrial Applications.',
+  },
+  {
+    img: granulesColors,
+    kicker: 'Purity That Performs',
+    titleHead: '100% Quality-Tested',
+    titleAccent: 'Virgin PVC Compound Granules',
+    text: 'Produced from virgin resins and tested batch after batch, so your production lines run with consistent, predictable results.',
+  },
+  {
+    img: productionLine,
+    kicker: 'Made to Your Specification',
+    titleHead: 'Custom Colors & Formulations for',
+    titleAccent: 'Every Application',
+    text: 'Flexible and rigid grades tailored to your hardness, shade and performance targets — from sample matching to full-scale supply.',
+  },
+]
+
 const applications = [
   {
     img: appCables,
@@ -81,44 +108,8 @@ const applications = [
 function Home() {
   return (
     <main>
-      {/* Hero banner */}
-      <section
-        className="hero"
-        style={{ backgroundImage: `url(${heroFactory})` }}
-      >
-        <div className="hero-dots" aria-hidden="true">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div className="container">
-          <div className="hero-content">
-            <span className="hero-kicker">
-              Engineering Advanced PVC Compound Solutions for Tomorrow
-            </span>
-            <h1>
-              Premium PVC Granules Manufacturer for{' '}
-              <span className="accent-text">Reliable Performance</span>
-            </h1>
-            <p>
-              Delivering high quality Flexible &amp; Rigid PVC Granules for
-              Wire &amp; Cable, Footwear, Automotive, Construction and
-              Industrial Applications.
-            </p>
-            <div className="hero-ctas">
-              <Link to="/contact" className="btn btn-primary">
-                Request a Quote
-              </Link>
-              <Link to="/contact" className="btn btn-outline">
-                Contact Technical Team
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Hero slider */}
+      <HeroSlider slides={heroSlides} />
 
       {/* Stats band */}
       <section className="stats-band">
