@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { useSearchParams } from 'react-router-dom'
+import Reveal from '../components/Reveal'
 import products from '../data/products'
 import heroFactory from '../assets/hero-factory.jpg'
 
@@ -67,6 +68,7 @@ function Contact() {
 
       <section className="section">
         <div className="container contact-grid">
+          <Reveal>
           <div className="form-card">
             <h2 style={{ marginBottom: '1.2rem' }}>Inquiry Form</h2>
 
@@ -176,7 +178,9 @@ function Contact() {
               </button>
             </form>
           </div>
+          </Reveal>
 
+          <Reveal delay={150}>
           <div className="info-card">
             <h3>Company Information</h3>
             <p>
@@ -204,6 +208,7 @@ function Contact() {
               sales@yourcompany.com
             </p>
           </div>
+          </Reveal>
         </div>
       </section>
     </main>

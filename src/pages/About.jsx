@@ -1,3 +1,4 @@
+import Reveal from '../components/Reveal'
 import productionLine from '../assets/production-line.jpg'
 import sustainability from '../assets/sustainability.jpg'
 
@@ -24,59 +25,76 @@ function About() {
 
       <section className="section">
         <div className="container split">
-          <div>
-            <h2>Company Overview</h2>
-            <p>
-              AVISA ORGANISATIONS PVT LTD is a leading manufacturer of PVC
-              granules and compounds delivering customized polymer solutions
-              for diverse industrial applications.
-            </p>
-            <p>
-              With advanced manufacturing capabilities and a customer-focused
-              approach, we serve the wire &amp; cable, footwear, automotive,
-              construction and industrial sectors with dependable, high-quality
-              compounds.
-            </p>
-          </div>
-          <img src={productionLine} alt="PVC granule production line" />
+          <Reveal>
+            <div>
+              <h2>Company Overview</h2>
+              <p>
+                AVISA ORGANISATIONS PVT LTD is a leading manufacturer of PVC
+                granules and compounds delivering customized polymer solutions
+                for diverse industrial applications.
+              </p>
+              <p>
+                With advanced manufacturing capabilities and a customer-focused
+                approach, we serve the wire &amp; cable, footwear, automotive,
+                construction and industrial sectors with dependable,
+                high-quality compounds.
+              </p>
+            </div>
+          </Reveal>
+          <Reveal delay={150}>
+            <img src={productionLine} alt="PVC granule production line" />
+          </Reveal>
         </div>
       </section>
 
       <section className="section section-alt">
         <div className="container">
-          <div className="grid grid-3" style={{ gridTemplateColumns: 'repeat(2, 1fr)' }}>
-            <div className="card">
-              <div className="card-icon">🎯</div>
-              <h3>Vision</h3>
-              <p>
-                To become a globally trusted PVC compound manufacturer known
-                for quality, innovation and reliability.
-              </p>
-            </div>
-            <div className="card">
-              <div className="card-icon">🚀</div>
-              <h3>Mission</h3>
-              <p>
-                To provide superior PVC compounds through advanced
-                manufacturing, technical expertise and customer-focused
-                service.
-              </p>
-            </div>
+          <div className="grid" style={{ gridTemplateColumns: 'repeat(2, 1fr)' }}>
+            <Reveal>
+              <div className="card">
+                <div className="card-icon">🎯</div>
+                <h3>Vision</h3>
+                <p>
+                  To become a globally trusted PVC compound manufacturer known
+                  for quality, innovation and reliability.
+                </p>
+              </div>
+            </Reveal>
+            <Reveal delay={150}>
+              <div className="card">
+                <div className="card-icon">🚀</div>
+                <h3>Mission</h3>
+                <p>
+                  To provide superior PVC compounds through advanced
+                  manufacturing, technical expertise and customer-focused
+                  service.
+                </p>
+              </div>
+            </Reveal>
           </div>
         </div>
       </section>
 
       <section className="section">
         <div className="container">
-          <h2 className="section-title">Core Values</h2>
-          <p className="section-subtitle">The principles that guide everything we do.</p>
+          <Reveal>
+            <h2 className="section-title">
+              Core Values
+              <span className="title-bar" />
+            </h2>
+            <p className="section-subtitle">
+              The principles that guide everything we do.
+            </p>
+          </Reveal>
           <div className="grid grid-3">
-            {coreValues.map((v) => (
-              <div className="card" key={v.title}>
-                <div className="card-icon">{v.icon}</div>
-                <h3>{v.title}</h3>
-                <p>{v.text}</p>
-              </div>
+            {coreValues.map((v, i) => (
+              <Reveal key={v.title} delay={(i % 3) * 120}>
+                <div className="card">
+                  <div className="card-icon">{v.icon}</div>
+                  <h3>{v.title}</h3>
+                  <p>{v.text}</p>
+                </div>
+              </Reveal>
             ))}
           </div>
         </div>
@@ -84,15 +102,23 @@ function About() {
 
       <section className="section section-alt">
         <div className="container split">
-          <img src={sustainability} alt="Sustainable manufacturing" loading="lazy" />
-          <div>
-            <h2>Sustainable by Design</h2>
-            <p>
-              We invest in cleaner processes and responsible material sourcing
-              to reduce our environmental footprint — because quality compounds
-              and a healthy planet go hand in hand.
-            </p>
-          </div>
+          <Reveal>
+            <img
+              src={sustainability}
+              alt="Sustainable manufacturing"
+              loading="lazy"
+            />
+          </Reveal>
+          <Reveal delay={150}>
+            <div>
+              <h2>Sustainable by Design</h2>
+              <p>
+                We invest in cleaner processes and responsible material
+                sourcing to reduce our environmental footprint — because
+                quality compounds and a healthy planet go hand in hand.
+              </p>
+            </div>
+          </Reveal>
         </div>
       </section>
     </main>

@@ -1,4 +1,5 @@
 import { Link, useParams } from 'react-router-dom'
+import Reveal from '../components/Reveal'
 import products from '../data/products'
 
 function ProductDetail() {
@@ -40,6 +41,7 @@ function ProductDetail() {
 
       <section className="section">
         <div className="container split">
+          <Reveal>
           <div>
             <h2>Product Overview</h2>
             <p style={{ color: 'var(--color-muted)' }}>{product.short}</p>
@@ -67,7 +69,9 @@ function ProductDetail() {
               </Link>
             </div>
           </div>
+          </Reveal>
 
+          <Reveal delay={150}>
           <div>
             <img src={product.image} alt={product.name} />
             <table className="spec-table">
@@ -85,6 +89,7 @@ function ProductDetail() {
               </tbody>
             </table>
           </div>
+          </Reveal>
         </div>
       </section>
     </main>

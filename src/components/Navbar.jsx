@@ -1,11 +1,19 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { NavLink, Link, useNavigate } from 'react-router-dom'
 import products from '../data/products'
 
 function Navbar() {
   const [query, setQuery] = useState('')
   const [menuOpen, setMenuOpen] = useState(false)
+  const [scrolled, setScrolled] = useState(false)
   const navigate = useNavigate()
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 24)
+    onScroll()
+    window.addEventListener('scroll', onScroll, { passive: true })
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [])
 
   const matches = query.trim()
     ? products.filter((p) =>
@@ -21,7 +29,7 @@ function Navbar() {
   }
 
   return (
-    <header className="navbar">
+    <header className={`navbar${scrolled ? ' scrolled' : ''}`}>
       <div className="container navbar-inner">
         <Link to="/" className="brand" onClick={() => setMenuOpen(false)}>
           <span className="brand-mark">A</span>
