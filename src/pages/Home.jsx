@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import Reveal from '../components/Reveal'
 import CountUp from '../components/CountUp'
-import Carousel from '../components/Carousel'
+import IndustriesShowcase from '../components/IndustriesShowcase'
 import HeroSlider from '../components/HeroSlider'
 import heroFactory from '../assets/hero-factory.jpg'
 import granulesColors from '../assets/granules-colors.jpg'
@@ -153,7 +153,7 @@ function Home() {
       </section>
 
       {/* Applications */}
-      <section className="section section-alt">
+      <section className="section section-dark">
         <div className="container">
           <Reveal>
             <h2 className="section-title">
@@ -165,7 +165,7 @@ function Home() {
             </p>
           </Reveal>
           <Reveal delay={100}>
-            <Carousel items={applications} />
+            <IndustriesShowcase items={applications} />
           </Reveal>
         </div>
       </section>
