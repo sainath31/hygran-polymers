@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import Reveal from '../components/Reveal'
 import CountUp from '../components/CountUp'
+import Carousel from '../components/Carousel'
 import heroFactory from '../assets/hero-factory.jpg'
 import sustainability from '../assets/sustainability.jpg'
 import appCables from '../assets/app-cables.jpg'
@@ -50,11 +51,31 @@ const stats = [
 ]
 
 const applications = [
-  { img: appCables, label: 'Wire & Cable' },
-  { img: appFootwear, label: 'Footwear' },
-  { img: appAutomotive, label: 'Automotive' },
-  { img: appConstruction, label: 'Construction' },
-  { img: appIndustrial, label: 'Industrial' },
+  {
+    img: appCables,
+    label: 'Wire & Cable',
+    text: 'Insulation and sheathing compounds engineered for electrical safety and long service life.',
+  },
+  {
+    img: appFootwear,
+    label: 'Footwear',
+    text: 'Flexible, abrasion-resistant grades that give soles and straps lasting comfort.',
+  },
+  {
+    img: appAutomotive,
+    label: 'Automotive',
+    text: 'Interior trims and components with consistent finish, feel and durability.',
+  },
+  {
+    img: appConstruction,
+    label: 'Construction',
+    text: 'Rigid compounds for pipes, profiles and panels that stand the test of time.',
+  },
+  {
+    img: appIndustrial,
+    label: 'Industrial',
+    text: 'Custom formulations for demanding engineering and manufacturing applications.',
+  },
 ]
 
 function Home() {
@@ -152,16 +173,9 @@ function Home() {
               Our granules power products across a wide range of industries.
             </p>
           </Reveal>
-          <div className="grid grid-4">
-            {applications.map((a, i) => (
-              <Reveal key={a.label} delay={(i % 4) * 100}>
-                <div className="photo-card">
-                  <img src={a.img} alt={a.label} loading="lazy" />
-                  <span>{a.label}</span>
-                </div>
-              </Reveal>
-            ))}
-          </div>
+          <Reveal delay={100}>
+            <Carousel items={applications} />
+          </Reveal>
         </div>
       </section>
 
