@@ -21,7 +21,7 @@ function Products() {
 
       <section className="section">
         <div className="container">
-          <div className="grid" style={{ gridTemplateColumns: 'repeat(2, 1fr)' }}>
+          <div className="grid grid-2">
             {products.map((p, i) => (
               <Reveal key={p.id} delay={(i % 2) * 130}>
                 <div className="product-card">

@@ -49,7 +49,7 @@ function About() {
 
       <section className="section section-alt">
         <div className="container">
-          <div className="grid" style={{ gridTemplateColumns: 'repeat(2, 1fr)' }}>
+          <div className="grid grid-2">
             <Reveal>
               <div className="card">
                 <div className="card-icon">🎯</div>

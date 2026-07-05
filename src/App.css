@@ -321,6 +321,10 @@
   gap: 1.6rem;
 }
 
+.grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
 .grid-3 {
   grid-template-columns: repeat(3, 1fr);
 }
@@ -813,6 +817,10 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+
   .stats-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -859,9 +867,35 @@
 }
 
 @media (max-width: 560px) {
+  .grid-2,
   .grid-3,
   .grid-4 {
     grid-template-columns: 1fr;
+  }
+
+  .navbar-inner {
+    gap: 0.7rem;
+  }
+
+  .brand-text {
+    display: none;
+  }
+
+  .page-header h1 {
+    font-size: 1.9rem;
+  }
+
+  .form-card,
+  .info-card {
+    padding: 1.5rem;
+  }
+
+  .stats-grid {
+    gap: 1rem;
+  }
+
+  .stat h3 {
+    font-size: 1.8rem;
   }
 
   .form-row {
