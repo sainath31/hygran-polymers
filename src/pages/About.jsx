@@ -3,11 +3,11 @@ import productionLine from '../assets/production-line.jpg'
 import sustainability from '../assets/sustainability.jpg'
 
 const coreValues = [
-  { icon: '🏅', title: 'Quality', text: 'Uncompromising standards in every granule we produce.' },
-  { icon: '🤝', title: 'Integrity', text: 'Honest, transparent relationships with customers and partners.' },
-  { icon: '💡', title: 'Innovation', text: 'Continuous improvement in formulations and processes.' },
-  { icon: '🌱', title: 'Sustainability', text: 'Responsible manufacturing for a better tomorrow.' },
-  { icon: '😊', title: 'Customer Satisfaction', text: 'Your success is the measure of ours.' },
+  { icon: '01', title: 'Quality', text: 'Uncompromising standards in every granule we produce.' },
+  { icon: '02', title: 'Integrity', text: 'Honest, transparent relationships with customers and partners.' },
+  { icon: '03', title: 'Innovation', text: 'Continuous improvement in formulations and processes.' },
+  { icon: '04', title: 'Sustainability', text: 'Responsible manufacturing for a better tomorrow.' },
+  { icon: '05', title: 'Customer Satisfaction', text: 'Your success is the measure of ours.' },
 ]
 
 function About() {
@@ -80,11 +80,7 @@ function About() {
           <Reveal>
             <h2 className="section-title">
               Core Values
-              <span className="title-bar" />
             </h2>
-            <p className="section-subtitle">
-              The principles that guide everything we do.
-            </p>
           </Reveal>
           <div className="grid grid-3">
             {coreValues.map((v, i) => (

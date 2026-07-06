@@ -15,32 +15,32 @@ import appIndustrial from '../assets/app-industrial.jpg'
 
 const whyChooseUs = [
   {
-    icon: '✅',
+    icon: '01',
     title: 'Consistent Quality',
     text: 'Every batch tested against strict quality standards for uniform performance.',
   },
   {
-    icon: '🧪',
+    icon: '02',
     title: 'Customized Formulations',
     text: 'Compounds tailored to your hardness, color and application requirements.',
   },
   {
-    icon: '💰',
+    icon: '03',
     title: 'Competitive Pricing',
     text: 'Efficient manufacturing that keeps your production costs in control.',
   },
   {
-    icon: '🚚',
+    icon: '04',
     title: 'Fast Delivery',
     text: 'Reliable lead times and dispatch that keeps your lines running.',
   },
   {
-    icon: '🛠️',
+    icon: '05',
     title: 'Technical Support',
     text: 'Our polymer experts help you select and troubleshoot the right grade.',
   },
   {
-    icon: '🌍',
+    icon: '06',
     title: 'Export Ready',
     text: 'Packaging, documentation and logistics support for global shipments.',
   },
@@ -131,12 +131,7 @@ function Home() {
           <Reveal>
             <h2 className="section-title">
               Why Choose Us
-              <span className="title-bar" />
             </h2>
-            <p className="section-subtitle">
-              A trusted partner for PVC compounds — from formulation to
-              delivery.
-            </p>
           </Reveal>
           <div className="grid grid-3">
             {whyChooseUs.map((item, i) => (
@@ -158,11 +153,7 @@ function Home() {
           <Reveal>
             <h2 className="section-title">
               Industries We Serve
-              <span className="title-bar" />
             </h2>
-            <p className="section-subtitle">
-              Our granules power products across a wide range of industries.
-            </p>
           </Reveal>
           <Reveal delay={100}>
             <IndustriesShowcase items={applications} />
