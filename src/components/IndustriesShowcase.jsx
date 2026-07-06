@@ -103,7 +103,6 @@ function IndustriesShowcase({ items }) {
         {items.map((item, i) => (
           <article className="inds-card" key={item.label}>
             <img src={item.img} alt={item.label} loading="lazy" draggable="false" />
-            <span className="inds-num">{String(i + 1).padStart(2, '0')}</span>
             <div className="inds-body">
               <h3>{item.label}</h3>
               <p>{item.text}</p>
