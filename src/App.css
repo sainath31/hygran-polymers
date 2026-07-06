@@ -1479,6 +1479,14 @@
   transform: translateY(-50%) translateX(0);
 }
 
+@media (max-width: 900px) and (orientation: landscape) {
+  .wa-float {
+    left: 1.25rem;
+    right: auto;
+    bottom: 1.25rem;
+  }
+}
+
 @keyframes waPulse {
   0%, 100% {
     box-shadow: 0 6px 24px rgba(37, 211, 102, 0.45);
