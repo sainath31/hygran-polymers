@@ -125,10 +125,6 @@ function Footer() {
         </div>
 
         <div className="footer-bottom">
-          <span>
-            © {new Date().getFullYear()} Granx Industries Pvt Ltd. All
-            rights reserved.
-          </span>
           <button
             type="button"
             className="back-to-top"
@@ -137,6 +133,10 @@ function Footer() {
           >
             ↑ Top
           </button>
+          <span>
+            © {new Date().getFullYear()} Granx Industries Pvt Ltd. All
+            rights reserved.
+          </span>
         </div>
       </div>
     </footer>
