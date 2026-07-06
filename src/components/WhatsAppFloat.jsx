@@ -1,5 +1,5 @@
 // Replace with Granx Industries WhatsApp number (digits only, with country code)
-const WHATSAPP_NUMBER = '919XXXXXXXXX'
+const WHATSAPP_NUMBER = '919949275566'
 const WHATSAPP_MESSAGE = 'Hello, I would like to enquire about your PVC granules.'
 
 function WhatsAppFloat() {
