@@ -35,7 +35,7 @@ function Navbar() {
           <span className="brand-mark">G</span>
           <span className="brand-text">
             Granx Industries
-            <small>PVT LTD &middot; PVC GRANULES</small>
+            <small>Formulated for Excellence.</small>
           </span>
         </Link>
 

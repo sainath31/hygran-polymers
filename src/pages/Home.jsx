@@ -56,7 +56,7 @@ const stats = [
 const heroSlides = [
   {
     img: heroFactory,
-    kicker: 'Engineering Advanced PVC Compound Solutions for Tomorrow',
+    kicker: 'Formulated for Excellence.',
     titleHead: 'Premium PVC Granules Manufacturer for',
     titleAccent: 'Reliable Performance',
     text: 'Delivering high quality Flexible & Rigid PVC Granules for Wire & Cable, Footwear, Automotive, Construction and Industrial Applications.',
