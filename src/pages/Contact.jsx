@@ -188,12 +188,8 @@ function Contact() {
               Granx Industries Pvt Ltd
             </p>
             <p>
-              <strong>Registered Address</strong>
-              [Registered address to be updated]
-            </p>
-            <p>
               <strong>Manufacturing Unit</strong>
-              [Manufacturing unit address to be updated]
+              SY No 651, Lal Gadi Malakpet, Shamirpet, Medchal Malkajgiri, Hyderabad — 500078, Telangana, India
             </p>
             <p>
               <strong>📞 Mobile</strong>

@@ -115,12 +115,8 @@ function Footer() {
             <h4>Meet Us</h4>
             <ul className="footer-contact">
               <li>
-                <span className="fc-label">Registered Office</span>
-                <span>[Registered address to be updated]</span>
-              </li>
-              <li>
                 <span className="fc-label">Manufacturing Unit</span>
-                <span>[Manufacturing unit address to be updated]</span>
+                <span>SY No 651, Lal Gadi Malakpet, Shamirpet, Medchal Malkajgiri, Hyderabad — 500078, Telangana, India</span>
               </li>
             </ul>
           </div>
