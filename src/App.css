@@ -365,19 +365,24 @@
 }
 
 .hero-text-link {
-  color: rgba(255, 255, 255, 0.75);
+  color: rgba(255, 255, 255, 0.85);
   font-size: 0.95rem;
   font-weight: 500;
   letter-spacing: 0.01em;
-  transition: color 0.25s, gap 0.25s;
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
+  text-decoration: underline;
+  text-decoration-color: var(--color-accent);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+  transition: color 0.25s, gap 0.25s, text-decoration-color 0.25s;
 }
 
 .hero-text-link:hover {
   color: #fff;
   gap: 0.55rem;
+  text-decoration-color: #fff;
 }
 
 .hero .btn-primary {
