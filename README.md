@@ -44,6 +44,8 @@ The workflow includes two retry steps on the deploy job to handle transient GitH
 
 **Live URL:** `https://sainath31.github.io/avisa-organization/`
 
+> The GitHub repository is currently named `avisa-organization`. To update the URL to reflect the Granx Industries brand, rename the repository to `granx-industries` in GitHub Settings, then update `base` in `vite.config.js` to `/granx-industries/`.
+
 ---
 
 ## Brand Identity
@@ -192,7 +194,7 @@ Floating button links to `https://wa.me/919949275566` with a pre-filled enquiry 
 ## Repository Structure
 
 ```
-avisa-organization/
+granx-industries/
 ├── public/
 ├── src/
 │   ├── assets/          # Images (hero, product, application photos)
@@ -208,6 +210,6 @@ avisa-organization/
 │   └── workflows/
 │       └── deploy.yml   # GitHub Actions — build and Pages deploy
 ├── index.html           # HTML shell, Google Fonts imports, meta tags
-├── vite.config.js       # Vite config (base: '/avisa-organization/')
+├── vite.config.js       # Vite config (base path matches GitHub repo name)
 └── package.json
 ```
