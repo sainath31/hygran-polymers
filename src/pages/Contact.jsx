@@ -185,7 +185,7 @@ function Contact() {
             <h3>Company Information</h3>
             <p>
               <strong>Company Name</strong>
-              AVISA ORGANISATIONS PVT LTD
+              Granx Industries Pvt Ltd
             </p>
             <p>
               <strong>Registered Address</strong>

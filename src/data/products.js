@@ -1,4 +1,4 @@
-// Product catalog for AVISA ORGANISATIONS PVT LTD.
+// Product catalog for Granx Industries Pvt Ltd.
 // NOTE: Spec values below are typical-range placeholders — replace with
 // your actual grade datasheet values before going live.
 

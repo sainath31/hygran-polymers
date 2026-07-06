@@ -55,9 +55,9 @@ function Footer() {
         <div className="footer-grid">
           <div className="footer-brand">
             <div className="footer-logo">
-              <span className="brand-mark">A</span>
+              <span className="brand-mark">G</span>
               <span>
-                AVISA ORGANISATIONS
+                Granx Industries
                 <small>PVT LTD &middot; PVC GRANULES</small>
               </span>
             </div>
@@ -128,7 +128,7 @@ function Footer() {
 
         <div className="footer-bottom">
           <span>
-            © {new Date().getFullYear()} AVISA ORGANISATIONS PVT LTD. All
+            © {new Date().getFullYear()} Granx Industries Pvt Ltd. All
             rights reserved.
           </span>
           <button

@@ -184,7 +184,7 @@ function Home() {
             <div>
               <h2>Committed to Quality &amp; Sustainability</h2>
               <p>
-                At AVISA ORGANISATIONS, sustainability is a core value. We
+                At Granx Industries, sustainability is a core value. We
                 continuously improve our processes to reduce waste and deliver
                 compounds that support a responsible supply chain.
               </p>

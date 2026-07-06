@@ -10,10 +10,10 @@ import Contact from './pages/Contact'
 import './App.css'
 
 const titles = {
-  '/': 'AVISA ORGANISATIONS PVT LTD — Premium PVC Granules Manufacturer',
-  '/about': 'About Us — AVISA ORGANISATIONS PVT LTD',
-  '/products': 'Our Products — AVISA ORGANISATIONS PVT LTD',
-  '/contact': 'Contact Us — AVISA ORGANISATIONS PVT LTD',
+  '/': 'Granx Industries Pvt Ltd — Premium PVC Granules Manufacturer',
+  '/about': 'About Us — Granx Industries Pvt Ltd',
+  '/products': 'Our Products — Granx Industries Pvt Ltd',
+  '/contact': 'Contact Us — Granx Industries Pvt Ltd',
 }
 
 function App() {
@@ -22,7 +22,7 @@ function App() {
   useEffect(() => {
     window.scrollTo(0, 0)
     document.title =
-      titles[pathname] || 'AVISA ORGANISATIONS PVT LTD — PVC Granules'
+      titles[pathname] || 'Granx Industries Pvt Ltd — PVC Granules'
   }, [pathname])
 
   return (

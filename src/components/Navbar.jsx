@@ -32,9 +32,9 @@ function Navbar() {
     <header className={`navbar${scrolled ? ' scrolled' : ''}`}>
       <div className="container navbar-inner">
         <Link to="/" className="brand" onClick={() => setMenuOpen(false)}>
-          <span className="brand-mark">A</span>
+          <span className="brand-mark">G</span>
           <span className="brand-text">
-            AVISA ORGANISATIONS
+            Granx Industries
             <small>PVT LTD &middot; PVC GRANULES</small>
           </span>
         </Link>
