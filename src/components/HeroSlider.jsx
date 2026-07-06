@@ -70,7 +70,6 @@ function HeroSlider({ slides }) {
 
       <div className="container">
         <div className="hero-content" key={slide.titleAccent}>
-          <span className="hero-kicker">{slide.kicker}</span>
           <h1>
             {slide.titleHead}{' '}
             <span className="accent-text">{slide.titleAccent}</span>
@@ -80,8 +79,8 @@ function HeroSlider({ slides }) {
             <Link to="/contact" className="btn btn-primary">
               Request a Quote
             </Link>
-            <Link to="/contact" className="btn btn-outline">
-              Contact Technical Team
+            <Link to="/contact" className="hero-text-link">
+              Contact our team <span aria-hidden="true">→</span>
             </Link>
           </div>
         </div>
