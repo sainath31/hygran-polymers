@@ -137,7 +137,6 @@ function Home() {
             {whyChooseUs.map((item, i) => (
               <Reveal key={item.title} delay={(i % 3) * 120}>
                 <div className="card">
-                  <div className="card-icon">{item.icon}</div>
                   <h3>{item.title}</h3>
                   <p>{item.text}</p>
                 </div>

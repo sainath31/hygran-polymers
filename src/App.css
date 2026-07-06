@@ -364,14 +364,14 @@
   flex-wrap: wrap;
 }
 
-.hero-ctas .btn-primary {
+.hero .btn-primary {
   background: rgba(255, 255, 255, 0.12);
   border-color: rgba(255, 255, 255, 0.8);
   color: #fff;
   animation: none;
 }
 
-.hero-ctas .btn-primary:hover {
+.hero .btn-primary:hover {
   background: rgba(255, 255, 255, 0.22);
   border-color: #fff;
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);

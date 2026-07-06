@@ -86,7 +86,6 @@ function About() {
             {coreValues.map((v, i) => (
               <Reveal key={v.title} delay={(i % 3) * 120}>
                 <div className="card">
-                  <div className="card-icon">{v.icon}</div>
                   <h3>{v.title}</h3>
                   <p>{v.text}</p>
                 </div>
