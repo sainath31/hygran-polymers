@@ -1399,6 +1399,22 @@
     font-size: 1.8rem;
   }
 
+  .hero-ctas {
+    flex-wrap: nowrap;
+    gap: 1rem;
+  }
+
+  .hero-ctas .btn {
+    padding: 0.7rem 1.25rem;
+    font-size: 0.88rem;
+    white-space: nowrap;
+  }
+
+  .hero-text-link {
+    font-size: 0.88rem;
+    white-space: nowrap;
+  }
+
   .inds-card {
     flex-basis: 240px;
     height: 330px;
