@@ -79,8 +79,8 @@ function HeroSlider({ slides }) {
             <Link to="/contact" className="btn btn-primary">
               Request a Quote
             </Link>
-            <Link to="/contact" className="hero-text-link">
-              Contact our team <span aria-hidden="true">→</span>
+            <Link to="/contact" className="btn btn-outline">
+              Contact our team
             </Link>
           </div>
         </div>
