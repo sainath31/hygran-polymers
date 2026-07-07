@@ -1013,6 +1013,8 @@
 }
 
 .brochure-card-btn {
+  position: relative;
+  z-index: 1;
   display: block;
   width: fit-content;
   margin: 0 auto;
