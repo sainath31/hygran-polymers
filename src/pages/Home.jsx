@@ -133,6 +133,20 @@ function Home() {
         </div>
       </section>
 
+      {/* Brochure CTA */}
+      <section className="brochure-cta-band">
+        <div className="container brochure-cta-inner">
+          <Reveal>
+            <p className="brochure-cta-eyebrow">Product Brochure</p>
+            <h2>Get Our Complete Product Guide</h2>
+            <p>Specs, grades, application data and ordering info — all in one document.</p>
+            <Link to="/brochure" className="btn btn-outline brochure-cta-btn">
+              Request Brochure
+            </Link>
+          </Reveal>
+        </div>
+      </section>
+
       {/* Why choose us */}
       <section className="section">
         <div className="container">

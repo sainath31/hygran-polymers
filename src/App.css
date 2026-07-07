@@ -938,6 +938,52 @@
   place-items: center;
 }
 
+/* ===================== Brochure CTA Band ===================== */
+.brochure-cta-band {
+  background: var(--color-primary-deeper);
+  padding: 5rem 0;
+  text-align: center;
+  color: #fff;
+}
+
+.brochure-cta-inner {
+  max-width: 640px;
+}
+
+.brochure-cta-eyebrow {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: 0.9rem;
+}
+
+.brochure-cta-band h2 {
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #fff;
+  margin-bottom: 0.85rem;
+}
+
+.brochure-cta-band p {
+  color: rgba(255, 255, 255, 0.68);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.brochure-cta-btn {
+  border-color: rgba(255, 255, 255, 0.7);
+  color: #fff;
+}
+
+.brochure-cta-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: #fff;
+}
+
 /* ===================== Contact ===================== */
 .contact-grid {
   display: grid;
