@@ -17,8 +17,10 @@
 }
 
 .navbar-inner {
+  position: relative;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 1.5rem;
   min-height: 78px;
 }
@@ -209,17 +211,18 @@
   padding-bottom: 1rem;
 }
 
-/* Search (centered between brand and nav) */
+/* Search (true-centered in the navbar row) */
 .nav-center {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  min-width: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: clamp(200px, 32vw, 380px);
 }
 
 .nav-search {
   position: relative;
-  width: min(320px, 100%);
+  width: 100%;
 }
 
 .nav-search input {
@@ -1593,13 +1596,6 @@
     gap: 2.2rem;
   }
 
-  .nav-center {
-    padding: 0 0.4rem;
-  }
-
-  .nav-search {
-    width: min(260px, 100%);
-  }
 }
 
 @media (max-width: 560px) {
@@ -1615,6 +1611,10 @@
 
   .brand-text {
     display: none;
+  }
+
+  .nav-center {
+    width: min(240px, 48vw);
   }
 
   .page-header h1 {
