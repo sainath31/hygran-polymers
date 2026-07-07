@@ -134,15 +134,38 @@ function Home() {
       </section>
 
       {/* Brochure CTA */}
-      <section className="brochure-cta-band">
-        <div className="container brochure-cta-inner">
+      <section
+        className="brochure-cta"
+        style={{ backgroundImage: `url(${granulesColors})` }}
+      >
+        <div className="container brochure-cta-grid">
           <Reveal>
-            <p className="brochure-cta-eyebrow">Product Brochure</p>
-            <h2>Get Our Complete Product Guide</h2>
-            <p>Specs, grades, application data and ordering info — all in one document.</p>
-            <Link to="/brochure" className="btn btn-outline brochure-cta-btn">
-              Request Brochure
-            </Link>
+            <div className="brochure-cta-copy">
+              <p className="brochure-cta-eyebrow">Product Brochure</p>
+              <h2>Everything We Make. One Document.</h2>
+              <p>
+                Complete grade specifications, application data and ordering
+                information for every product family.
+              </p>
+              <Link to="/brochure" className="btn btn-outline brochure-cta-btn">
+                Request Brochure <span className="cta-arrow">→</span>
+              </Link>
+            </div>
+          </Reveal>
+          <Reveal delay={150}>
+            <div className="brochure-mock" aria-hidden="true">
+              <div className="brochure-mock-page p2" />
+              <div className="brochure-mock-page p1" />
+              <div className="brochure-mock-cover">
+                <span className="brand-mark">G</span>
+                <small>Granx Industries</small>
+                <strong>Product Guide</strong>
+                <span className="mock-rule" />
+                <span className="mock-line" />
+                <span className="mock-line" />
+                <span className="mock-line short" />
+              </div>
+            </div>
           </Reveal>
         </div>
       </section>
