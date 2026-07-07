@@ -79,9 +79,14 @@ function HeroSlider({ slides }) {
             <Link to="/contact" className="btn btn-primary">
               Request a Quote
             </Link>
-            <Link to="/contact" className="btn btn-outline">
+            <a
+              href={`https://wa.me/919949275566?text=${encodeURIComponent('Hello, I would like to speak with your team about PVC granules.')}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-outline"
+            >
               Contact our team
-            </Link>
+            </a>
           </div>
         </div>
       </div>
