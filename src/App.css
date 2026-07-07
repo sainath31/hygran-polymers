@@ -965,10 +965,11 @@
   position: absolute;
   inset: 0;
   background: linear-gradient(
-    100deg,
-    rgba(6, 54, 48, 0.82) 0%,
-    rgba(9, 79, 69, 0.52) 48%,
-    rgba(9, 79, 69, 0.08) 100%
+    95deg,
+    rgba(6, 54, 48, 0.78) 0%,
+    rgba(6, 54, 48, 0.45) 38%,
+    rgba(9, 79, 69, 0.12) 58%,
+    rgba(9, 79, 69, 0) 72%
   );
 }
 
@@ -986,6 +987,7 @@
   z-index: 1;
   max-width: 480px;
   color: #fff;
+  text-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
 }
 
 .brochure-card-eyebrow {
@@ -1048,9 +1050,9 @@
   .brochure-card::before {
     background: linear-gradient(
       100deg,
-      rgba(6, 54, 48, 0.88) 0%,
-      rgba(9, 79, 69, 0.72) 60%,
-      rgba(9, 79, 69, 0.45) 100%
+      rgba(6, 54, 48, 0.82) 0%,
+      rgba(9, 79, 69, 0.6) 55%,
+      rgba(9, 79, 69, 0.25) 100%
     );
   }
 }
