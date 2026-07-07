@@ -3,9 +3,11 @@ import Reveal from '../components/Reveal'
 import CountUp from '../components/CountUp'
 import IndustriesShowcase from '../components/IndustriesShowcase'
 import HeroSlider from '../components/HeroSlider'
+import BrochureSection from '../components/BrochureSection'
 import heroFactory from '../assets/hero-factory.jpg'
 import granulesColors from '../assets/granules-colors.jpg'
 import productionLine from '../assets/production-line.jpg'
+import pvcGranules from '../assets/pvc-granules.jpg'
 import sustainability from '../assets/sustainability.jpg'
 import appCables from '../assets/app-cables.jpg'
 import appFootwear from '../assets/app-footwear.jpg'
@@ -75,6 +77,13 @@ const heroSlides = [
     titleAccent: 'Every Application',
     text: 'Flexible and rigid grades tailored to your hardness, shade and performance targets — from sample matching to full-scale supply.',
   },
+  {
+    img: pvcGranules,
+    kicker: 'Engineered to Perform',
+    titleHead: 'The Raw Material Behind',
+    titleAccent: 'Every Great Product',
+    text: 'Our PVC granules and compounds deliver consistent melt flow, colour stability and mechanical performance — batch after batch, every time.',
+  },
 ]
 
 const applications = [
@@ -124,6 +133,8 @@ function Home() {
           ))}
         </div>
       </section>
+
+      <BrochureSection />
 
       {/* Why choose us */}
       <section className="section">
