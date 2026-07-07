@@ -96,7 +96,7 @@ function Privacy() {
               Granx Industries Pvt Ltd
               <br />
               SY No 651, Lal Gadi Malakpet, Shamirpet, Medchal Malkajgiri,
-              Hyderabad — 500078, Telangana, India
+              Hyderabad 500078, Telangana, India
               <br />
               Phone / WhatsApp: +91 99492 75566
             </p>

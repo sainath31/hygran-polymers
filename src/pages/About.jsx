@@ -109,7 +109,7 @@ function About() {
               <h2>Sustainable by Design</h2>
               <p>
                 We invest in cleaner processes and responsible material
-                sourcing to reduce our environmental footprint — because
+                sourcing to reduce our environmental footprint, because
                 quality compounds and a healthy planet go hand in hand.
               </p>
             </div>

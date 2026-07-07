@@ -196,7 +196,7 @@ function Contact() {
             </p>
             <p>
               <strong>Manufacturing Unit</strong>
-              SY No 651, Lal Gadi Malakpet, Shamirpet, Medchal Malkajgiri, Hyderabad — 500078, Telangana, India
+              SY No 651, Lal Gadi Malakpet, Shamirpet, Medchal Malkajgiri, Hyderabad 500078, Telangana, India
             </p>
             <p>
               <strong>📞 Mobile</strong>

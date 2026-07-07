@@ -1,5 +1,5 @@
 // Product catalog for Granx Industries Pvt Ltd.
-// NOTE: Spec values below are typical-range placeholders — replace with
+// NOTE: Spec values below are typical-range placeholders. Replace with
 // your actual grade datasheet values before going live.
 
 import granulesColors from '../assets/granules-colors.jpg'
@@ -22,10 +22,10 @@ const products = [
       'Automotive interior parts',
     ],
     specs: {
-      'Hardness Range': '55–95 Shore A',
-      Density: '1.20–1.45 g/cm³',
-      'Tensile Strength': '10–22 MPa',
-      Elongation: '200–400 %',
+      'Hardness Range': '55-95 Shore A',
+      Density: '1.20-1.45 g/cm³',
+      'Tensile Strength': '10-22 MPa',
+      Elongation: '200-400 %',
       'Color Availability': 'Natural, black and custom-matched colors',
     },
   },
@@ -43,10 +43,10 @@ const products = [
       'Construction sheets and panels',
     ],
     specs: {
-      'Hardness Range': '78–85 Shore D',
-      Density: '1.35–1.50 g/cm³',
-      'Tensile Strength': '40–55 MPa',
-      Elongation: '20–80 %',
+      'Hardness Range': '78-85 Shore D',
+      Density: '1.35-1.50 g/cm³',
+      'Tensile Strength': '40-55 MPa',
+      Elongation: '20-80 %',
       'Color Availability': 'White, grey, ivory and custom colors',
     },
   },
@@ -64,10 +64,10 @@ const products = [
       'Transparent footwear components',
     ],
     specs: {
-      'Hardness Range': '60–90 Shore A',
-      Density: '1.18–1.30 g/cm³',
-      'Tensile Strength': '12–20 MPa',
-      Elongation: '250–380 %',
+      'Hardness Range': '60-90 Shore A',
+      Density: '1.18-1.30 g/cm³',
+      'Tensile Strength': '12-20 MPa',
+      Elongation: '250-380 %',
       'Color Availability': 'Water-clear, tinted transparent shades',
     },
   },
@@ -85,11 +85,11 @@ const products = [
       'Custom OEM components',
     ],
     specs: {
-      'Hardness Range': '55–95 Shore A / up to 80 Shore D',
-      Density: '1.20–1.50 g/cm³',
-      'Tensile Strength': '10–45 MPa (grade dependent)',
-      Elongation: '30–400 % (grade dependent)',
-      'Color Availability': 'Any shade — Pantone / RAL / sample matching',
+      'Hardness Range': '55-95 Shore A / up to 80 Shore D',
+      Density: '1.20-1.50 g/cm³',
+      'Tensile Strength': '10-45 MPa (grade dependent)',
+      Elongation: '30-400 % (grade dependent)',
+      'Color Availability': 'Any shade: Pantone / RAL / sample matching',
     },
   },
 ]

@@ -46,8 +46,8 @@ function Terms() {
 
             <h2>4. Intellectual Property</h2>
             <p>
-              All content on this website — including text, graphics, logos
-              and images — belongs to Granx Industries Pvt Ltd or its
+              All content on this website, including text, graphics, logos
+              and images, belongs to Granx Industries Pvt Ltd or its
               licensors and may not be reproduced without our prior written
               permission.
             </p>
@@ -86,7 +86,7 @@ function Terms() {
               Granx Industries Pvt Ltd
               <br />
               SY No 651, Lal Gadi Malakpet, Shamirpet, Medchal Malkajgiri,
-              Hyderabad — 500078, Telangana, India
+              Hyderabad 500078, Telangana, India
               <br />
               Phone / WhatsApp: +91 99492 75566
             </p>

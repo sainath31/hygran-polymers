@@ -62,7 +62,7 @@ function Brochure() {
                 <line x1="12" y1="16" x2="12.01" y2="16" />
               </svg>
               <p>
-                Make sure to enter the correct email address — we'll send the
+                Make sure to enter the correct email address. We'll send the
                 brochure directly to your inbox. Your details are only used to
                 deliver the brochure.
               </p>

@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 
-// Social profiles — update hrefs when the company pages are created
+// Social profiles. Update hrefs when the company pages are created
 const socials = [
   {
     label: 'LinkedIn',
@@ -120,7 +120,7 @@ function Footer() {
             <ul className="footer-contact">
               <li>
                 <span className="fc-label">Manufacturing Unit</span>
-                <span>SY No 651, Lal Gadi Malakpet, Shamirpet, Medchal Malkajgiri, Hyderabad — 500078, Telangana, India</span>
+                <span>SY No 651, Lal Gadi Malakpet, Shamirpet, Medchal Malkajgiri, Hyderabad 500078, Telangana, India</span>
               </li>
             </ul>
           </div>
