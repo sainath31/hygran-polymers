@@ -64,6 +64,13 @@ const heroSlides = [
     text: 'Delivering high quality Flexible & Rigid PVC Granules for Wire & Cable, Footwear, Automotive, Construction and Industrial Applications.',
   },
   {
+    img: pvcGranules,
+    kicker: 'Engineered to Perform',
+    titleHead: 'The Raw Material Behind',
+    titleAccent: 'Every Great Product',
+    text: 'Our PVC granules and compounds deliver consistent melt flow, colour stability and mechanical performance. Reliable results, batch after batch.',
+  },
+  {
     img: granulesColors,
     kicker: 'Purity That Performs',
     titleHead: '100% Quality-Tested',
@@ -76,13 +83,6 @@ const heroSlides = [
     titleHead: 'Custom Colors & Formulations for',
     titleAccent: 'Every Application',
     text: 'Flexible and rigid grades tailored to your hardness, shade and performance targets. From sample matching to full-scale supply.',
-  },
-  {
-    img: pvcGranules,
-    kicker: 'Engineered to Perform',
-    titleHead: 'The Raw Material Behind',
-    titleAccent: 'Every Great Product',
-    text: 'Our PVC granules and compounds deliver consistent melt flow, colour stability and mechanical performance. Reliable results, batch after batch.',
   },
 ]
 
@@ -152,7 +152,7 @@ function Home() {
                 </p>
               </div>
               <span className="btn btn-outline brochure-card-btn">
-                Request Brochure <span className="cta-arrow">→</span>
+                Request Brochure
               </span>
             </Link>
           </Reveal>

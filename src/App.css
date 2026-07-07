@@ -1020,16 +1020,6 @@
   margin: 0 auto;
 }
 
-.cta-arrow {
-  display: inline-block;
-  margin-left: 0.3rem;
-  transition: transform 0.3s var(--ease-out);
-}
-
-.brochure-card:hover .cta-arrow {
-  transform: translateX(4px);
-}
-
 @media (max-width: 700px) {
   .brochure-card-wrap {
     padding: 3.5rem 0;
