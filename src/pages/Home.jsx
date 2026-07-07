@@ -7,6 +7,7 @@ import heroFactory from '../assets/hero-factory.jpg'
 import granulesColors from '../assets/granules-colors.jpg'
 import productionLine from '../assets/production-line.jpg'
 import pvcGranules from '../assets/pvc-granules.jpg'
+import granulesBlack from '../assets/granules-black.jpg'
 import sustainability from '../assets/sustainability.jpg'
 import appCables from '../assets/app-cables.jpg'
 import appFootwear from '../assets/app-footwear.jpg'
@@ -140,7 +141,7 @@ function Home() {
             <Link
               to="/brochure"
               className="brochure-card"
-              style={{ backgroundImage: `url(${pvcGranules})` }}
+              style={{ backgroundImage: `url(${granulesBlack})` }}
             >
               <div className="brochure-card-content">
                 <p className="brochure-card-eyebrow">Product Brochure</p>

@@ -949,7 +949,7 @@
   overflow: hidden;
   border-radius: 18px;
   background-size: cover;
-  background-position: center right;
+  background-position: center 68%;
   padding: 3.5rem 3.2rem;
   box-shadow: 0 24px 60px rgba(6, 54, 48, 0.22);
   transition: transform 0.4s var(--ease-out), box-shadow 0.4s;
