@@ -150,7 +150,7 @@ function Home() {
                   Complete grade specifications and application data for every
                   product family.
                 </p>
-                <span className="brochure-card-action">
+                <span className="btn btn-outline brochure-card-btn">
                   Request Brochure <span className="cta-arrow">→</span>
                 </span>
               </div>
