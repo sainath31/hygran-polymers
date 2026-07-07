@@ -1638,13 +1638,14 @@
 .brochure-call-alt {
   display: flex;
   gap: 0.85rem;
-  align-items: center;
+  align-items: flex-start;
   color: var(--color-muted);
   font-size: 0.95rem;
 }
 
 .brochure-call-alt svg {
   flex-shrink: 0;
+  margin-top: 3px;
   color: var(--color-primary);
 }
 
