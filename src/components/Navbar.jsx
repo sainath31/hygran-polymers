@@ -5,6 +5,7 @@ import products from '../data/products'
 function Navbar() {
   const [query, setQuery] = useState('')
   const [menuOpen, setMenuOpen] = useState(false)
+  const [productsOpen, setProductsOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
   const navigate = useNavigate()
 
@@ -14,6 +15,19 @@ function Navbar() {
     window.addEventListener('scroll', onScroll, { passive: true })
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
+
+  // Lock page scroll while the drawer is open
+  useEffect(() => {
+    document.body.style.overflow = menuOpen ? 'hidden' : ''
+    return () => {
+      document.body.style.overflow = ''
+    }
+  }, [menuOpen])
+
+  const closeMenu = () => {
+    setMenuOpen(false)
+    setProductsOpen(false)
+  }
 
   const matches = query.trim()
     ? products.filter((p) =>
@@ -31,7 +45,7 @@ function Navbar() {
   return (
     <header className={`navbar${scrolled ? ' scrolled' : ''}`}>
       <div className="container navbar-inner">
-        <Link to="/" className="brand" onClick={() => setMenuOpen(false)}>
+        <Link to="/" className="brand" onClick={closeMenu}>
           <span className="brand-mark">G</span>
           <span className="brand-text">
             Granx Industries
@@ -71,41 +85,83 @@ function Navbar() {
           </div>
         </div>
 
-        <nav>
-          <ul
-            className={`nav-links${menuOpen ? ' open' : ''}`}
-            onClick={() => setMenuOpen(false)}
-          >
-            <li>
-              <NavLink to="/" end>
-                Home
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/about">About Us</NavLink>
-            </li>
-            <li>
-              <NavLink to="/products">Products</NavLink>
-            </li>
-            <li>
-              <NavLink to="/contact">Contact Us</NavLink>
-            </li>
-            <li>
-              <NavLink to="/brochure">Brochure</NavLink>
-            </li>
-          </ul>
-        </nav>
-
         <button
           type="button"
           className="nav-toggle"
-          aria-label="Toggle menu"
+          aria-label="Open menu"
           aria-expanded={menuOpen}
-          onClick={() => setMenuOpen((o) => !o)}
+          onClick={() => setMenuOpen(true)}
         >
           ☰
         </button>
       </div>
+
+      {menuOpen && (
+        <div className="nav-backdrop" onClick={closeMenu} aria-hidden="true" />
+      )}
+
+      <aside className={`nav-drawer${menuOpen ? ' open' : ''}`}>
+        <div className="nav-drawer-head">
+          <span className="brand-mark">G</span>
+          <button
+            type="button"
+            className="nav-drawer-close"
+            onClick={closeMenu}
+            aria-label="Close menu"
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" aria-hidden="true">
+              <line x1="18" y1="6" x2="6" y2="18" />
+              <line x1="6" y1="6" x2="18" y2="18" />
+            </svg>
+          </button>
+        </div>
+
+        <ul className="nav-drawer-links" onClick={closeMenu}>
+          <li>
+            <NavLink to="/" end>
+              Home
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/about">About Us</NavLink>
+          </li>
+          <li className={`nav-sub-parent${productsOpen ? ' sub-open' : ''}`}>
+            <div className="nav-sub-row">
+              <NavLink to="/products">Products</NavLink>
+              <button
+                type="button"
+                className="nav-sub-toggle"
+                aria-expanded={productsOpen}
+                aria-label="Toggle products submenu"
+                onClick={(e) => {
+                  e.stopPropagation()
+                  setProductsOpen((o) => !o)
+                }}
+              >
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <polyline points="6 9 12 15 18 9" />
+                </svg>
+              </button>
+            </div>
+            <ul className="nav-sub">
+              {products.map((p) => (
+                <li key={p.id}>
+                  <NavLink to={`/products/${p.id}`}>{p.name}</NavLink>
+                </li>
+              ))}
+            </ul>
+          </li>
+          <li>
+            <NavLink to="/careers">Careers</NavLink>
+          </li>
+          <li>
+            <NavLink to="/contact">Contact Us</NavLink>
+          </li>
+          <li>
+            <NavLink to="/brochure">Download Brochure</NavLink>
+          </li>
+        </ul>
+      </aside>
     </header>
   )
 }

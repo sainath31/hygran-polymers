@@ -9,6 +9,9 @@ import Products from './pages/Products'
 import ProductDetail from './pages/ProductDetail'
 import Contact from './pages/Contact'
 import Brochure from './pages/Brochure'
+import Careers from './pages/Careers'
+import Privacy from './pages/Privacy'
+import Terms from './pages/Terms'
 import './App.css'
 
 const titles = {
@@ -17,6 +20,9 @@ const titles = {
   '/products': 'Our Products — Granx Industries Pvt Ltd',
   '/contact': 'Contact Us — Granx Industries Pvt Ltd',
   '/brochure': 'Request Brochure — Granx Industries Pvt Ltd',
+  '/careers': 'Careers — Granx Industries Pvt Ltd',
+  '/privacy-policy': 'Privacy Policy — Granx Industries Pvt Ltd',
+  '/terms-of-use': 'Terms of Use — Granx Industries Pvt Ltd',
 }
 
 function App() {
@@ -39,6 +45,9 @@ function App() {
           <Route path="/products/:id" element={<ProductDetail />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/brochure" element={<Brochure />} />
+          <Route path="/careers" element={<Careers />} />
+          <Route path="/privacy-policy" element={<Privacy />} />
+          <Route path="/terms-of-use" element={<Terms />} />
         </Routes>
       </div>
       <Footer />

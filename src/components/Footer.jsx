@@ -44,6 +44,7 @@ const explore = [
   { label: 'Home', to: '/' },
   { label: 'About Us', to: '/about' },
   { label: 'Products', to: '/products' },
+  { label: 'Careers', to: '/careers' },
   { label: 'Contact Us', to: '/contact' },
   { label: 'Download Brochure', to: '/brochure' },
 ]
@@ -134,6 +135,11 @@ function Footer() {
           >
             ↑ Top
           </button>
+          <div className="footer-legal">
+            <Link to="/privacy-policy">Privacy Policy</Link>
+            <span aria-hidden="true">·</span>
+            <Link to="/terms-of-use">Terms of Use</Link>
+          </div>
           <span>
             © {new Date().getFullYear()} Granx Industries Pvt Ltd. All
             rights reserved.
