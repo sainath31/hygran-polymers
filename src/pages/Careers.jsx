@@ -18,16 +18,15 @@ function Careers() {
       <section className="section">
         <div className="container careers-wrap">
           <Reveal>
-            <h2 className="section-title">We're Just Getting Started</h2>
+            <h2 className="section-title">Join Our Team</h2>
             <p>
-              Granx Industries is a young company building its founding team.
-              We don't have formal openings posted yet, but we're always keen
-              to hear from people who are passionate about polymers,
-              manufacturing and quality.
+              We're always looking for talented people who share our
+              commitment to quality, in production, quality control, sales
+              and operations.
             </p>
             <p>
-              If that sounds like you, we'd love to know more about you and
-              what you'd bring to the team.
+              Tell us about yourself and the role you're looking for, and
+              we'll be in touch when there's a fit.
             </p>
             <Link to="/contact" className="btn btn-primary">
               Reach Out to Us
