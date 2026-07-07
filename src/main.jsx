@@ -4,10 +4,21 @@ import { HashRouter } from 'react-router-dom'
 import './index.css'
 import App from './App.jsx'
 
-createRoot(document.getElementById('root')).render(
+document.addEventListener('load', (e) => {
+  if (e.target.tagName === 'IMG') e.target.classList.add('loaded')
+}, true)
+
+const root = createRoot(document.getElementById('root'))
+root.render(
   <StrictMode>
     <HashRouter>
       <App />
     </HashRouter>
   </StrictMode>,
 )
+
+requestAnimationFrame(() => {
+  document.querySelectorAll('img').forEach((img) => {
+    if (img.complete && img.naturalWidth > 0) img.classList.add('loaded')
+  })
+})

@@ -19,6 +19,7 @@ function Contact() {
   })
   const [errors, setErrors] = useState(initialErrors)
   const [submitted, setSubmitted] = useState(false)
+  const [submitting, setSubmitting] = useState(false)
 
   const update = (field) => (e) => {
     setForm({ ...form, [field]: e.target.value })
@@ -41,12 +42,14 @@ function Contact() {
     return errs
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
     const errs = validate()
     setErrors(errs)
     if (Object.keys(errs).length === 0) {
-      // No backend yet — mark as submitted so the user gets feedback.
+      setSubmitting(true)
+      await new Promise((r) => setTimeout(r, 700))
+      setSubmitting(false)
       setSubmitted(true)
     }
   }
@@ -173,8 +176,12 @@ function Contact() {
                 />
               </div>
 
-              <button type="submit" className="btn btn-primary">
-                Request a Quote
+              <button type="submit" className="btn btn-primary" disabled={submitting}>
+                {submitting ? (
+                  <><span className="btn-spin" aria-hidden="true" />Sending…</>
+                ) : (
+                  'Request a Quote'
+                )}
               </button>
             </form>
           </div>

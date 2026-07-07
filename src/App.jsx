@@ -8,6 +8,7 @@ import About from './pages/About'
 import Products from './pages/Products'
 import ProductDetail from './pages/ProductDetail'
 import Contact from './pages/Contact'
+import Brochure from './pages/Brochure'
 import './App.css'
 
 const titles = {
@@ -15,6 +16,7 @@ const titles = {
   '/about': 'About Us — Granx Industries Pvt Ltd',
   '/products': 'Our Products — Granx Industries Pvt Ltd',
   '/contact': 'Contact Us — Granx Industries Pvt Ltd',
+  '/brochure': 'Request Brochure — Granx Industries Pvt Ltd',
 }
 
 function App() {
@@ -29,13 +31,16 @@ function App() {
   return (
     <div className="app-shell">
       <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/products" element={<Products />} />
-        <Route path="/products/:id" element={<ProductDetail />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
+      <div key={pathname} className="page-transition">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/products/:id" element={<ProductDetail />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/brochure" element={<Brochure />} />
+        </Routes>
+      </div>
       <Footer />
       <WhatsAppFloat />
     </div>

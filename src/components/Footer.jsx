@@ -45,7 +45,7 @@ const explore = [
   { label: 'About Us', to: '/about' },
   { label: 'Products', to: '/products' },
   { label: 'Contact Us', to: '/contact' },
-  { label: 'Download Brochure', to: '/#brochure' },
+  { label: 'Download Brochure', to: '/brochure' },
 ]
 
 function Footer() {

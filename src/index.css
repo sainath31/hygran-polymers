@@ -136,7 +136,26 @@ h1, h2, h3, h4 {
   transform: none;
 }
 
+/* ===== Page transition ===== */
+.page-transition {
+  animation: pageFadeIn 0.3s var(--ease-out) both;
+}
+
+/* ===== Image fade-in on load ===== */
+img {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+img.loaded {
+  opacity: 1;
+}
+
 /* ===== Keyframes ===== */
+@keyframes pageFadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: none; }
+}
+
 @keyframes riseIn {
   from {
     opacity: 0;

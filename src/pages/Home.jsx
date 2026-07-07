@@ -3,7 +3,6 @@ import Reveal from '../components/Reveal'
 import CountUp from '../components/CountUp'
 import IndustriesShowcase from '../components/IndustriesShowcase'
 import HeroSlider from '../components/HeroSlider'
-import BrochureSection from '../components/BrochureSection'
 import heroFactory from '../assets/hero-factory.jpg'
 import granulesColors from '../assets/granules-colors.jpg'
 import productionLine from '../assets/production-line.jpg'
@@ -133,8 +132,6 @@ function Home() {
           ))}
         </div>
       </section>
-
-      <BrochureSection />
 
       {/* Why choose us */}
       <section className="section">

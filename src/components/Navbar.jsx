@@ -90,6 +90,9 @@ function Navbar() {
             <li>
               <NavLink to="/contact">Contact Us</NavLink>
             </li>
+            <li>
+              <NavLink to="/brochure">Brochure</NavLink>
+            </li>
           </ul>
         </nav>
 
