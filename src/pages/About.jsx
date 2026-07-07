@@ -7,7 +7,7 @@ const coreValues = [
   { icon: '02', title: 'Integrity', text: 'Honest, transparent relationships with customers and partners.' },
   { icon: '03', title: 'Innovation', text: 'Continuous improvement in formulations and processes.' },
   { icon: '04', title: 'Sustainability', text: 'Responsible manufacturing for a better tomorrow.' },
-  { icon: '05', title: 'Customer Satisfaction', text: 'Your success is the measure of ours. We build lasting partnerships, not one-time transactions.' },
+  { icon: '05', title: 'Customer Satisfaction', text: 'Lasting partnerships built around your success.' },
 ]
 
 function About() {
