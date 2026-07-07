@@ -852,11 +852,6 @@
   flex-wrap: wrap;
 }
 
-.feature-ctas .btn {
-  padding: 0.65rem 1.5rem;
-  font-size: 0.93rem;
-}
-
 .grade-chip {
   display: inline-block;
   align-self: flex-start;
@@ -1018,8 +1013,9 @@
 }
 
 .brochure-card-btn {
-  padding: 0.7rem 1.6rem;
-  font-size: 0.92rem;
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
 }
 
 .cta-arrow {
