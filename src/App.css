@@ -522,6 +522,16 @@
   gap: 1.6rem;
 }
 
+/* Equal-height cards: stretch each card to fill its grid cell */
+.grid > .reveal {
+  display: flex;
+  flex-direction: column;
+}
+
+.grid > .reveal > .card {
+  flex: 1;
+}
+
 .grid-2 {
   grid-template-columns: repeat(2, 1fr);
 }
