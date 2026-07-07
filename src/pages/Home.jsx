@@ -74,14 +74,14 @@ const heroSlides = [
     kicker: 'Made to Your Specification',
     titleHead: 'Custom Colors & Formulations for',
     titleAccent: 'Every Application',
-    text: 'Flexible and rigid grades tailored to your hardness, shade and performance targets — from sample matching to full-scale supply.',
+    text: 'Flexible and rigid grades tailored to your hardness, shade and performance targets. From sample matching to full-scale supply.',
   },
   {
     img: pvcGranules,
     kicker: 'Engineered to Perform',
     titleHead: 'The Raw Material Behind',
     titleAccent: 'Every Great Product',
-    text: 'Our PVC granules and compounds deliver consistent melt flow, colour stability and mechanical performance — batch after batch, every time.',
+    text: 'Our PVC granules and compounds deliver consistent melt flow, colour stability and mechanical performance. Reliable results, batch after batch.',
   },
 ]
 
