@@ -4,7 +4,7 @@
 
 import granulesColors from '../assets/granules-colors.jpg'
 import productionLine from '../assets/production-line.jpg'
-import heroFactory from '../assets/hero-factory.jpg'
+import rigidPvc from '../assets/rigid-pvc.jpg'
 import appMedical from '../assets/app-medical.jpg'
 
 const products = [
@@ -33,7 +33,7 @@ const products = [
     id: 'rigid-pvc-granules',
     name: 'Rigid PVC Granules',
     gradeCode: 'AVR-200',
-    image: heroFactory,
+    image: rigidPvc,
     short:
       'Unplasticized (uPVC) compounds with high stiffness and impact strength for pipes, fittings and profiles.',
     applications: [
