@@ -36,7 +36,7 @@ function About() {
               <p>
                 With advanced manufacturing capabilities and a customer-focused
                 approach, we serve the wire &amp; cable, footwear, automotive,
-                construction and industrial sectors with dependable,
+                construction, medical and industrial sectors with dependable,
                 high-quality compounds.
               </p>
             </div>

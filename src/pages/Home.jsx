@@ -14,6 +14,7 @@ import appFootwear from '../assets/app-footwear.jpg'
 import appAutomotive from '../assets/app-automotive.jpg'
 import appConstruction from '../assets/app-construction.jpg'
 import appIndustrial from '../assets/app-industrial.jpg'
+import appMedical from '../assets/app-medical.jpg'
 
 const whyChooseUs = [
   {
@@ -51,7 +52,7 @@ const whyChooseUs = [
 const stats = [
   { end: 100, suffix: '%', label: 'Batch Quality Testing' },
   { end: 4, suffix: '+', label: 'Product Families' },
-  { end: 5, suffix: '+', label: 'Industries Served' },
+  { end: 6, suffix: '+', label: 'Industries Served' },
   { end: 24, suffix: 'h', label: 'Quote Response Time' },
 ]
 
@@ -61,7 +62,7 @@ const heroSlides = [
     kicker: 'Formulated for Excellence.',
     titleHead: 'Premium PVC Granules Manufacturer for',
     titleAccent: 'Reliable Performance',
-    text: 'Delivering high quality Flexible & Rigid PVC Granules for Wire & Cable, Footwear, Automotive, Construction and Industrial Applications.',
+    text: 'Delivering high quality Flexible & Rigid PVC Granules for Wire & Cable, Footwear, Automotive, Construction, Medical and Industrial Applications.',
   },
   {
     img: pvcGranules,
@@ -106,6 +107,11 @@ const applications = [
     img: appConstruction,
     label: 'Construction',
     text: 'Rigid compounds for pipes, profiles and panels that stand the test of time.',
+  },
+  {
+    img: appMedical,
+    label: 'Medical',
+    text: 'Crystal-clear compounds for tubing, masks and medical device components.',
   },
   {
     img: appIndustrial,

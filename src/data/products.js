@@ -4,8 +4,8 @@
 
 import granulesColors from '../assets/granules-colors.jpg'
 import productionLine from '../assets/production-line.jpg'
-import sustainability from '../assets/sustainability.jpg'
 import heroFactory from '../assets/hero-factory.jpg'
+import appMedical from '../assets/app-medical.jpg'
 
 const products = [
   {
@@ -54,14 +54,14 @@ const products = [
     id: 'transparent-pvc-granules',
     name: 'Transparent PVC Granules',
     gradeCode: 'AVT-300',
-    image: sustainability,
+    image: appMedical,
     short:
       'Crystal-clear PVC compounds with excellent optical clarity for tubing, packaging and consumer goods.',
     applications: [
+      'Medical tubing, masks and device components',
       'Clear tubing and hoses',
       'Blister and rigid packaging',
       'Transparent footwear components',
-      'Medical-adjacent and consumer products',
     ],
     specs: {
       'Hardness Range': '60–90 Shore A',

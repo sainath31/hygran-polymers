@@ -65,7 +65,7 @@ function Footer() {
             <p>
               Leading manufacturer of PVC granules and compounds, delivering
               customized polymer solutions for wire &amp; cable, footwear,
-              automotive, construction and industrial applications.
+              automotive, construction, medical and industrial applications.
             </p>
             <div className="footer-socials">
               {socials.map((s) => (

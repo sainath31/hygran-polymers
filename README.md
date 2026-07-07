@@ -142,7 +142,7 @@ Defined in `src/data/products.js`. Four product families:
 |---|---|---|
 | AVF-100 | Flexible PVC Granules | Wire & cable insulation, footwear, automotive interiors |
 | AVR-200 | Rigid PVC Granules (uPVC) | Pipes, window profiles, electrical conduits, construction sheets |
-| AVT-300 | Transparent PVC Granules | Clear tubing, blister packaging, transparent footwear components |
+| AVT-300 | Transparent PVC Granules | Medical tubing and devices, clear tubing, blister packaging, transparent footwear components |
 | AVC-400 | Colored PVC Granules | Custom-colored wire jacketing, footwear, consumer articles |
 
 > **Note:** Spec values in `products.js` (hardness, density, tensile strength, elongation) are typical-range placeholders. Replace them with actual grade datasheet values before treating the site as a technical reference.
@@ -151,7 +151,7 @@ Defined in `src/data/products.js`. Four product families:
 
 ## Industries Served
 
-Wire & Cable · Footwear · Automotive · Construction · Industrial
+Wire & Cable · Footwear · Automotive · Construction · Medical · Industrial
 
 ---
 
