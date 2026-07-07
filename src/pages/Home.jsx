@@ -134,37 +134,25 @@ function Home() {
       </section>
 
       {/* Brochure CTA */}
-      <section
-        className="brochure-cta"
-        style={{ backgroundImage: `url(${granulesColors})` }}
-      >
-        <div className="container brochure-cta-grid">
+      <section className="brochure-strip-wrap">
+        <div className="container">
           <Reveal>
-            <div className="brochure-cta-copy">
-              <p className="brochure-cta-eyebrow">Product Brochure</p>
-              <h2>Everything We Make. One Document.</h2>
-              <p>
-                Complete grade specifications, application data and ordering
-                information for every product family.
-              </p>
-              <Link to="/brochure" className="btn btn-outline brochure-cta-btn">
+            <div className="brochure-strip">
+              <div className="brochure-strip-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                  <polyline points="14 2 14 8 20 8" />
+                  <line x1="16" y1="13" x2="8" y2="13" />
+                  <line x1="16" y1="17" x2="8" y2="17" />
+                </svg>
+              </div>
+              <div className="brochure-strip-text">
+                <h3>Product Brochure</h3>
+                <p>Complete specifications and grades for every product family.</p>
+              </div>
+              <Link to="/brochure" className="btn btn-primary brochure-strip-btn">
                 Request Brochure <span className="cta-arrow">→</span>
               </Link>
-            </div>
-          </Reveal>
-          <Reveal delay={150}>
-            <div className="brochure-mock" aria-hidden="true">
-              <div className="brochure-mock-page p2" />
-              <div className="brochure-mock-page p1" />
-              <div className="brochure-mock-cover">
-                <span className="brand-mark">G</span>
-                <small>Granx Industries</small>
-                <strong>Product Guide</strong>
-                <span className="mock-rule" />
-                <span className="mock-line" />
-                <span className="mock-line" />
-                <span className="mock-line short" />
-              </div>
             </div>
           </Reveal>
         </div>
