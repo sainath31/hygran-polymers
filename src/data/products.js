@@ -3,7 +3,7 @@
 // your actual grade datasheet values before going live.
 
 import granulesColors from '../assets/granules-colors.jpg'
-import productionLine from '../assets/production-line.jpg'
+import flexiblePvc from '../assets/flexible-pvc.jpg'
 import rigidPvc from '../assets/rigid-pvc.jpg'
 import appMedical from '../assets/app-medical.jpg'
 
@@ -12,7 +12,7 @@ const products = [
     id: 'flexible-pvc-granules',
     name: 'Flexible PVC Granules',
     gradeCode: 'AVF-100',
-    image: productionLine,
+    image: flexiblePvc,
     short:
       'Soft, plasticized PVC compounds for wire & cable insulation, footwear and flexible profiles.',
     applications: [
