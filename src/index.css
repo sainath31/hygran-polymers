@@ -1,24 +1,24 @@
 /* ===== Design tokens ===== */
 :root {
-  /* Granx Industries brand palette: primary green · accent silver · neutral grey */
-  --color-primary: #0C6B5E;
-  --color-primary-dark: #094F45;
-  --color-primary-deeper: #063630;
-  --color-primary-light: #159E84;
-  --color-accent: #A8B4BC;
-  --color-accent-dark: #8A9BA5;
-  --color-ink: #2D3A40;
-  --color-muted: #5A6B73;
+  /* Granx Industries brand palette: primary purple · accent orange · neutral purple-grey */
+  --color-primary: #4D148C;
+  --color-primary-dark: #3A0F6B;
+  --color-primary-deeper: #2A0A4E;
+  --color-primary-light: #6B29B5;
+  --color-accent: #FF6600;
+  --color-accent-dark: #E55A00;
+  --color-ink: #26212E;
+  --color-muted: #6A6475;
   --color-bg: #ffffff;
-  --color-bg-alt: #F0F4F5;
-  --color-border: #D2DDE1;
+  --color-bg-alt: #F7F5FB;
+  --color-border: #E4DEF0;
 
   --font-body: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
   --font-display: 'Sora', 'Segoe UI', system-ui, sans-serif;
 
   --radius: 14px;
-  --shadow: 0 2px 14px rgba(6, 54, 48, 0.08);
-  --shadow-lg: 0 16px 44px rgba(6, 54, 48, 0.18);
+  --shadow: 0 2px 14px rgba(42, 10, 78, 0.08);
+  --shadow-lg: 0 16px 44px rgba(42, 10, 78, 0.18);
   --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
 
   --container: 1140px;
@@ -74,7 +74,7 @@ h1, h2, h3, h4 {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #A8B4BC;
+  background: #FF6600;
   border-radius: 6px;
   border: 2px solid var(--color-bg-alt);
 }
@@ -187,13 +187,13 @@ img.loaded {
 
 @keyframes pulseRing {
   0% {
-    box-shadow: 0 0 0 0 rgba(12, 107, 94, 0.45);
+    box-shadow: 0 0 0 0 rgba(77, 20, 140, 0.45);
   }
   70% {
-    box-shadow: 0 0 0 14px rgba(12, 107, 94, 0);
+    box-shadow: 0 0 0 14px rgba(77, 20, 140, 0);
   }
   100% {
-    box-shadow: 0 0 0 0 rgba(12, 107, 94, 0);
+    box-shadow: 0 0 0 0 rgba(77, 20, 140, 0);
   }
 }
 
@@ -240,7 +240,7 @@ img.loaded {
 
 .btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 24px rgba(6, 54, 48, 0.25);
+  box-shadow: 0 10px 24px rgba(42, 10, 78, 0.25);
 }
 
 .btn:active {

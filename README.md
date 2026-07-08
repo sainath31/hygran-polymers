@@ -68,17 +68,21 @@ All colors are defined as CSS custom properties in `src/index.css`.
 
 | Token | Value | Usage |
 |---|---|---|
-| `--color-primary` | `#0C6B5E` | Primary green — main brand color |
-| `--color-primary-dark` | `#094F45` | Darker green — headings, hover states |
-| `--color-primary-deeper` | `#063630` | Deepest green — hero overlays, dark bands |
-| `--color-primary-light` | `#159E84` | Lighter green — accents, gradients |
-| `--color-accent` | `#A8B4BC` | Silver — accent text, shimmer, progress bars |
-| `--color-accent-dark` | `#8A9BA5` | Darker silver — secondary accents |
-| `--color-ink` | `#2D3A40` | Neutral dark — body text |
-| `--color-muted` | `#5A6B73` | Muted grey — secondary text |
+The brand palette follows FedEx-style **purple + orange**: purple carries the structure (nav, dark bands, headings, primary buttons), orange is the energetic accent (eyebrows, highlights, hover, hero accent word, progress bars).
+
+| Token | Value | Usage |
+|---|---|---|
+| `--color-primary` | `#4D148C` | FedEx purple — main brand color, buttons, links |
+| `--color-primary-dark` | `#3A0F6B` | Darker purple — headings, hover states |
+| `--color-primary-deeper` | `#2A0A4E` | Deepest purple — hero overlays, dark bands |
+| `--color-primary-light` | `#6B29B5` | Lighter purple — gradients |
+| `--color-accent` | `#FF6600` | FedEx orange — accent text, shimmer, progress bars |
+| `--color-accent-dark` | `#E55A00` | Darker orange — secondary accents |
+| `--color-ink` | `#26212E` | Purple-grey — body text |
+| `--color-muted` | `#6A6475` | Muted purple-grey — secondary text |
 | `--color-bg` | `#FFFFFF` | Page background |
-| `--color-bg-alt` | `#F0F4F5` | Alternate section background |
-| `--color-border` | `#D2DDE1` | Borders and dividers |
+| `--color-bg-alt` | `#F7F5FB` | Light purple-tint section background |
+| `--color-border` | `#E4DEF0` | Purple-grey borders and dividers |
 
 ### Typography
 
@@ -95,8 +99,8 @@ Both fonts are loaded from Google Fonts via `index.html`.
 |---|---|
 | `--radius` | `14px` — default border radius |
 | `--container` | `1140px` — max content width |
-| `--shadow` | `0 2px 14px rgba(6, 54, 48, 0.08)` |
-| `--shadow-lg` | `0 16px 44px rgba(6, 54, 48, 0.18)` |
+| `--shadow` | `0 2px 14px rgba(42, 10, 78, 0.08)` |
+| `--shadow-lg` | `0 16px 44px rgba(42, 10, 78, 0.18)` |
 | `--ease-out` | `cubic-bezier(0.22, 1, 0.36, 1)` |
 
 ### Breakpoints
@@ -168,13 +172,13 @@ The design draws from Tesla's web principles applied to a B2B manufacturing cont
 ### Hero slider
 Three slides, 6.4 s autoplay, ken-burns zoom on the active background image, crossfade transition between slides. Pauses on hover and touch. Progress bars at the bottom indicate slide timing.
 
-**CTAs:** Two ghost buttons per slide — "Request a Quote" (slightly filled white) and "Contact our team" (outlined white). No green gradient on imagery. On mobile (`≤560px`) both buttons scale to tighter padding and `white-space: nowrap` to stay on one line.
+**CTAs:** Two ghost buttons per slide — "Request a Quote" (slightly filled white) and "Contact our team" (outlined white). No purple gradient on imagery. On mobile (`≤560px`) both buttons scale to tighter padding and `white-space: nowrap` to stay on one line.
 
 ### Color on dark backgrounds
-Hero and dark section overlays use `rgba(6,54,48,…)` — derived from `--color-primary-deeper` — so the brand green saturates the imagery rather than a generic black. The accent silver (`#A8B4BC`) appears in progress bars and the shimmer animation on the headline accent word.
+Hero and dark section overlays use `rgba(42,10,78,…)` — derived from `--color-primary-deeper` — so the brand purple saturates the imagery rather than a generic black. The accent orange (`#FF6600`) appears in progress bars and the shimmer animation on the headline accent word.
 
 ### Navigation
-Sticky with `backdrop-filter: blur(14px)`. Becomes more opaque on scroll. Nav links use `font-weight: 400`, `0.88rem`, slight letter-spacing — no pill hover backgrounds, just a sliding underline in silver. Brand mark is a 40×40 green rounded tile with the letter "G".
+Sticky with `backdrop-filter: blur(14px)`. Becomes more opaque on scroll. All navigation lives in a slide-in drawer opened from the hamburger, with the Products entry expanding to the four product families. Active links highlight in orange. Brand mark is a 40×40 purple rounded tile with the letter "G".
 
 ### WhatsApp integration
 Floating button links to `https://wa.me/919949275566` with a pre-filled enquiry message. The footer social icon links to the same number and opens in a new tab.
