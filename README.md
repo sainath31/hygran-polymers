@@ -42,9 +42,9 @@ Pushes to `master` automatically trigger the GitHub Actions workflow (`.github/w
 
 The workflow includes two retry steps on the deploy job to handle transient GitHub Pages API failures.
 
-**Live URL:** `https://sainath31.github.io/avisa-organization/`
+**Live URL:** `https://sainath31.github.io/granx-industries/`
 
-> The GitHub repository is currently named `avisa-organization`. To update the URL to reflect the Granx Industries brand, rename the repository to `granx-industries` in GitHub Settings, then update `base` in `vite.config.js` to `/granx-industries/`.
+> The `base` path in `vite.config.js` (`/granx-industries/`) must match the GitHub repository name. If the repository is ever renamed, update `base` to the new name or the deployed site's assets will 404.
 
 ---
 
