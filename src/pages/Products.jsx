@@ -11,7 +11,10 @@ function Products() {
     <main>
       <section
         className="page-header"
-        style={{ backgroundImage: `url(${granulesColors})` }}
+        style={{
+          backgroundImage: `url(${granulesColors})`,
+          backgroundPosition: 'center 62%',
+        }}
       >
         <div className="container">
           <h1>Our Products</h1>
