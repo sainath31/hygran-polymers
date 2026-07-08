@@ -839,7 +839,7 @@
 .page-header {
   position: relative;
   color: #fff;
-  min-height: clamp(360px, 44vh, 480px);
+  min-height: clamp(420px, 56vh, 560px);
   display: flex;
   align-items: center;
   padding: 3.5rem 0;

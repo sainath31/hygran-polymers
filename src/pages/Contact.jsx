@@ -60,7 +60,7 @@ function Contact() {
         className="page-header"
         style={{
           backgroundImage: `url(${contactHeader})`,
-          backgroundPosition: 'center 58%',
+          backgroundPosition: 'center 78%',
         }}
       >
         <div className="container">

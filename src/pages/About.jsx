@@ -18,7 +18,7 @@ function About() {
         className="page-header"
         style={{
           backgroundImage: `url(${aboutHeader})`,
-          backgroundPosition: 'center 35%',
+          backgroundPosition: 'center 62%',
         }}
       >
         <div className="container">
