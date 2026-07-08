@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import Reveal from '../components/Reveal'
 import products from '../data/products'
-import heroFactory from '../assets/hero-factory.jpg'
+import contactHeader from '../assets/contact-header.jpg'
 
 const initialErrors = {}
 
@@ -58,7 +58,7 @@ function Contact() {
     <main>
       <section
         className="page-header"
-        style={{ backgroundImage: `url(${heroFactory})` }}
+        style={{ backgroundImage: `url(${contactHeader})` }}
       >
         <div className="container">
           <h1>Contact Us</h1>
