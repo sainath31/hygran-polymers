@@ -16,7 +16,10 @@ function About() {
     <main>
       <section
         className="page-header"
-        style={{ backgroundImage: `url(${aboutHeader})` }}
+        style={{
+          backgroundImage: `url(${aboutHeader})`,
+          backgroundPosition: 'center 35%',
+        }}
       >
         <div className="container">
           <h1>About Us</h1>

@@ -799,7 +799,7 @@
     transform: scale(1);
   }
   to {
-    transform: scale(1.09);
+    transform: scale(1.05);
   }
 }
 
@@ -839,7 +839,10 @@
 .page-header {
   position: relative;
   color: #fff;
-  padding: 5.5rem 0;
+  min-height: clamp(360px, 44vh, 480px);
+  display: flex;
+  align-items: center;
+  padding: 3.5rem 0;
   background-size: cover;
   background-position: center;
   overflow: hidden;

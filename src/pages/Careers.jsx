@@ -7,7 +7,10 @@ function Careers() {
     <main>
       <section
         className="page-header"
-        style={{ backgroundImage: `url(${careersHeader})` }}
+        style={{
+          backgroundImage: `url(${careersHeader})`,
+          backgroundPosition: 'center 30%',
+        }}
       >
         <div className="container">
           <h1>Careers</h1>
