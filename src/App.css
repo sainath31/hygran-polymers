@@ -314,7 +314,12 @@
   position: absolute;
   inset: 0;
   z-index: 1;
-  background: none;
+  background: linear-gradient(
+    100deg,
+    rgba(42, 10, 78, 0.4) 0%,
+    rgba(58, 15, 107, 0.2) 48%,
+    rgba(58, 15, 107, 0.02) 100%
+  );
 }
 
 /* Crossfading slide backgrounds */
@@ -404,7 +409,6 @@
   position: relative;
   max-width: 660px;
   padding: 4.5rem 0;
-  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.55);
 }
 
 .hero-content > * {
@@ -848,12 +852,16 @@
   content: '';
   position: absolute;
   inset: 0;
-  background: none;
+  background: linear-gradient(
+    100deg,
+    rgba(42, 10, 78, 0.4) 0%,
+    rgba(58, 15, 107, 0.2) 48%,
+    rgba(58, 15, 107, 0.02) 100%
+  );
 }
 
 .page-header .container {
   position: relative;
-  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.55);
 }
 
 .page-header h1 {
