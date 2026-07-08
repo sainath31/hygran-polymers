@@ -46,7 +46,7 @@ function Brochure() {
         className="page-header"
         style={{
           backgroundImage: `url(${granulesBlack})`,
-          backgroundPosition: 'center 55%',
+          backgroundPosition: 'center 66%',
         }}
       >
         <div className="container">
