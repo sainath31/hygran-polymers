@@ -1,7 +1,7 @@
 import Reveal from '../components/Reveal'
-import productionLine from '../assets/production-line.jpg'
 import sustainability from '../assets/sustainability.jpg'
 import aboutHeader from '../assets/about-header.jpg'
+import granulesBlack from '../assets/granules-black.jpg'
 
 const coreValues = [
   { icon: '01', title: 'Quality', text: 'Uncompromising standards in every granule we produce.' },
@@ -43,7 +43,7 @@ function About() {
             </div>
           </Reveal>
           <Reveal delay={150}>
-            <img src={productionLine} alt="PVC granule production line" />
+            <img src={granulesBlack} alt="PVC granules production" />
           </Reveal>
         </div>
       </section>
