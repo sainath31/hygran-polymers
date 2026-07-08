@@ -1,13 +1,13 @@
 import { Link } from 'react-router-dom'
 import Reveal from '../components/Reveal'
-import heroFactory from '../assets/hero-factory.jpg'
+import careersHeader from '../assets/careers-header.jpg'
 
 function Careers() {
   return (
     <main>
       <section
         className="page-header"
-        style={{ backgroundImage: `url(${heroFactory})` }}
+        style={{ backgroundImage: `url(${careersHeader})` }}
       >
         <div className="container">
           <h1>Careers</h1>
