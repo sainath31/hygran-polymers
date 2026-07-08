@@ -1,6 +1,7 @@
 import Reveal from '../components/Reveal'
 import productionLine from '../assets/production-line.jpg'
 import sustainability from '../assets/sustainability.jpg'
+import aboutHeader from '../assets/about-header.jpg'
 
 const coreValues = [
   { icon: '01', title: 'Quality', text: 'Uncompromising standards in every granule we produce.' },
@@ -15,7 +16,7 @@ function About() {
     <main>
       <section
         className="page-header"
-        style={{ backgroundImage: `url(${productionLine})` }}
+        style={{ backgroundImage: `url(${aboutHeader})` }}
       >
         <div className="container">
           <h1>About Us</h1>
