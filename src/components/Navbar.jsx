@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react'
 import { NavLink, Link, useNavigate } from 'react-router-dom'
 import products from '../data/products'
-import logoGranx from '../assets/logo-granx.jpg'
 
 function Navbar() {
   const [query, setQuery] = useState('')
@@ -47,7 +46,11 @@ function Navbar() {
     <header className={`navbar${scrolled ? ' scrolled' : ''}`}>
       <div className="container navbar-inner">
         <Link to="/" className="brand" onClick={closeMenu}>
-          <img className="brand-logo" src={logoGranx} alt="Granx Industries" />
+          <span className="brand-mark">G</span>
+          <span className="brand-text">
+            Granx Industries
+            <small>Formulated for Excellence.</small>
+          </span>
         </Link>
 
         <div className="nav-center">
