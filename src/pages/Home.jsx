@@ -151,10 +151,10 @@ function Home() {
             >
               <div className="brochure-card-content">
                 <p className="brochure-card-eyebrow">Product Brochure</p>
-                <h3>Everything We Make. One Document.</h3>
+                <h3>The Complete Product Guide</h3>
                 <p className="brochure-card-sub">
-                  Complete grade specifications and application data for every
-                  product family.
+                  Grade specifications and application data for every product
+                  family.
                 </p>
               </div>
               <span className="btn btn-outline brochure-card-btn">
