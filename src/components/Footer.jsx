@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import logoGranx from '../assets/logo-granx.jpg'
 
 // Social profiles. Update hrefs when the company pages are created
 const socials = [
@@ -57,11 +58,12 @@ function Footer() {
         <div className="footer-grid">
           <div className="footer-brand">
             <div className="footer-logo">
-              <span className="brand-mark">G</span>
-              <span>
-                Granx Industries
-                <small>Formulated for Excellence.</small>
-              </span>
+              <img
+                className="footer-logo-img"
+                src={logoGranx}
+                alt="Granx Industries"
+              />
+              <small>Formulated for Excellence.</small>
             </div>
             <p>
               Leading manufacturer of PVC granules and compounds, delivering

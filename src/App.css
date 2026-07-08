@@ -3,17 +3,17 @@
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(42, 10, 78, 0.55);
+  background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
-  color: #fff;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--color-ink);
+  border-bottom: 1px solid var(--color-border);
   transition: background 0.3s, box-shadow 0.3s;
 }
 
 .navbar.scrolled {
-  background: rgba(42, 10, 78, 0.97);
-  box-shadow: 0 8px 28px rgba(42, 10, 78, 0.4);
+  background: rgba(255, 255, 255, 0.98);
+  box-shadow: 0 6px 24px rgba(42, 10, 78, 0.08);
 }
 
 .navbar-inner {
@@ -28,13 +28,14 @@
 .brand {
   display: flex;
   align-items: center;
-  gap: 0.65rem;
-  color: #fff;
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: 1.02rem;
-  letter-spacing: 0.02em;
   white-space: nowrap;
+}
+
+.brand-logo {
+  height: 46px;
+  width: auto;
+  display: block;
+  opacity: 1;
 }
 
 .brand-mark {
@@ -229,9 +230,9 @@
   width: 100%;
   padding: 0.55rem 1.1rem;
   border-radius: 999px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  background: rgba(255, 255, 255, 0.1);
-  color: #fff;
+  border: 1px solid var(--color-border);
+  background: var(--color-bg-alt);
+  color: var(--color-ink);
   font-size: 0.9rem;
   font-family: var(--font-body);
   outline: none;
@@ -239,7 +240,7 @@
 }
 
 .nav-search input::placeholder {
-  color: rgba(255, 255, 255, 0.55);
+  color: var(--color-muted);
 }
 
 .nav-search input:focus {
@@ -285,7 +286,7 @@
   display: block;
   background: none;
   border: none;
-  color: #fff;
+  color: var(--color-primary);
   font-size: 1.7rem;
   cursor: pointer;
   padding: 0.2rem 0.4rem;
@@ -294,7 +295,7 @@
 }
 
 .nav-toggle:hover {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(42, 10, 78, 0.06);
 }
 
 /* ===================== Hero ===================== */
@@ -1326,10 +1327,9 @@
 /* ===================== Footer ===================== */
 .footer {
   position: relative;
-  background:
-    radial-gradient(ellipse 900px 420px at 85% -10%, rgba(107, 41, 181, 0.35), transparent),
-    linear-gradient(160deg, var(--color-primary-deeper), var(--color-primary-dark));
-  color: rgba(255, 255, 255, 0.8);
+  background: var(--color-bg-alt);
+  border-top: 1px solid var(--color-border);
+  color: var(--color-muted);
   padding: 4rem 0 1.4rem;
   margin-top: auto;
   overflow: hidden;
@@ -1354,12 +1354,12 @@
   grid-template-columns: 1.6fr 0.8fr 1.1fr 1.2fr;
   gap: 2.8rem;
   padding-bottom: 2.4rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  border-bottom: 1px solid var(--color-border);
 }
 
 .footer h4 {
   position: relative;
-  color: #fff;
+  color: var(--color-primary-dark);
   margin-bottom: 1.2rem;
   font-size: 0.95rem;
   text-transform: uppercase;
@@ -1385,27 +1385,32 @@
 /* Brand block */
 .footer-logo {
   display: flex;
-  align-items: center;
-  gap: 0.65rem;
-  color: #fff;
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: 1.02rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
   margin-bottom: 1.1rem;
+}
+
+.footer-logo-img {
+  height: 54px;
+  width: auto;
+  display: block;
+  opacity: 1;
 }
 
 .footer-logo small {
   display: block;
   font-family: var(--font-body);
-  font-size: 0.6rem;
-  font-weight: 500;
-  opacity: 0.75;
+  font-size: 0.62rem;
+  font-weight: 600;
+  color: var(--color-muted);
   letter-spacing: 0.14em;
+  text-transform: uppercase;
 }
 
 .footer-brand > p {
   font-size: 0.92rem;
-  color: rgba(255, 255, 255, 0.72);
+  color: var(--color-muted);
   margin-bottom: 1.4rem;
   max-width: 340px;
 }
@@ -1421,10 +1426,9 @@
   border-radius: 50%;
   display: grid;
   place-items: center;
-  color: rgba(255, 255, 255, 0.85);
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.16);
-  backdrop-filter: blur(4px);
+  color: var(--color-primary);
+  background: #fff;
+  border: 1px solid var(--color-border);
   transition:
     background 0.25s,
     color 0.25s,
@@ -1436,9 +1440,9 @@
 .footer-socials a:hover {
   background: var(--color-accent);
   border-color: var(--color-accent);
-  color: var(--color-primary-dark);
+  color: #fff;
   transform: translateY(-4px);
-  box-shadow: 0 8px 20px rgba(168, 180, 188, 0.35);
+  box-shadow: 0 8px 20px rgba(255, 102, 0, 0.3);
 }
 
 .footer-socials svg {
@@ -1454,7 +1458,7 @@
 .footer-explore a {
   position: relative;
   display: inline-block;
-  color: rgba(255, 255, 255, 0.78);
+  color: var(--color-muted);
   padding-left: 1.1rem;
   transition: color 0.2s, padding-left 0.25s var(--ease-out);
 }
@@ -1469,7 +1473,7 @@
 }
 
 .footer-explore a:hover {
-  color: var(--color-accent);
+  color: var(--color-primary);
   padding-left: 1.4rem;
 }
 
@@ -1485,12 +1489,12 @@
 }
 
 .footer-contact a {
-  color: rgba(255, 255, 255, 0.85);
+  color: var(--color-ink);
   transition: color 0.2s;
 }
 
 .footer-contact a:hover {
-  color: var(--color-accent);
+  color: var(--color-primary);
 }
 
 .fc-label {
@@ -1512,7 +1516,7 @@
   flex-wrap: wrap;
   padding-top: 1.5rem;
   font-size: 0.85rem;
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--color-muted);
 }
 
 .footer-legal {
@@ -1522,18 +1526,18 @@
 }
 
 .footer-legal a {
-  color: rgba(255, 255, 255, 0.55);
+  color: var(--color-muted);
   transition: color 0.25s;
 }
 
 .footer-legal a:hover {
-  color: #fff;
+  color: var(--color-primary);
 }
 
 .back-to-top {
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  color: rgba(255, 255, 255, 0.8);
+  background: #fff;
+  border: 1px solid var(--color-border);
+  color: var(--color-primary);
   border-radius: 999px;
   padding: 0.45rem 1.2rem;
   font-family: var(--font-body);
@@ -1550,7 +1554,7 @@
 .back-to-top:hover {
   background: var(--color-accent);
   border-color: var(--color-accent);
-  color: var(--color-primary-dark);
+  color: #fff;
   transform: translateY(-3px);
 }
 
@@ -1622,12 +1626,12 @@
     gap: 0.7rem;
   }
 
-  .brand-text {
-    display: none;
+  .brand-logo {
+    height: 36px;
   }
 
   .nav-center {
-    width: min(240px, 48vw);
+    display: none;
   }
 
   .page-header h1 {
@@ -1685,10 +1689,6 @@
 
   .section {
     padding: 3rem 0;
-  }
-
-  .brand span.brand-text {
-    font-size: 0.85rem;
   }
 }
 
