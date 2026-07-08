@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import Reveal from '../components/Reveal'
-import heroFactory from '../assets/hero-factory.jpg'
+import granulesBlack from '../assets/granules-black.jpg'
 
 const initialForm = { name: '', email: '', phone: '', message: '' }
 
@@ -44,7 +44,7 @@ function Brochure() {
     <main>
       <section
         className="page-header"
-        style={{ backgroundImage: `url(${heroFactory})` }}
+        style={{ backgroundImage: `url(${granulesBlack})` }}
       >
         <div className="container">
           <h1>Request Brochure</h1>
