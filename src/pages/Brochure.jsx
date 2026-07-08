@@ -44,7 +44,10 @@ function Brochure() {
     <main>
       <section
         className="page-header"
-        style={{ backgroundImage: `url(${granulesBlack})` }}
+        style={{
+          backgroundImage: `url(${granulesBlack})`,
+          backgroundPosition: 'center 55%',
+        }}
       >
         <div className="container">
           <h1>Request Brochure</h1>

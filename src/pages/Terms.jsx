@@ -6,7 +6,10 @@ function Terms() {
     <main>
       <section
         className="page-header"
-        style={{ backgroundImage: `url(${heroFactory})` }}
+        style={{
+          backgroundImage: `url(${heroFactory})`,
+          backgroundPosition: 'center 30%',
+        }}
       >
         <div className="container">
           <h1>Terms of Use</h1>
