@@ -24,7 +24,7 @@ function Terms() {
 
             <h2>1. Acceptance of Terms</h2>
             <p>
-              By accessing and using this website, operated by Granx
+              By accessing and using this website, operated by Hygran
               Industries Pvt Ltd, you agree to these Terms of Use. If you do
               not agree with any part of them, please do not use the site.
             </p>
@@ -50,7 +50,7 @@ function Terms() {
             <h2>4. Intellectual Property</h2>
             <p>
               All content on this website, including text, graphics, logos
-              and images, belongs to Granx Industries Pvt Ltd or its
+              and images, belongs to Hygran Polymers Pvt Ltd or its
               licensors and may not be reproduced without our prior written
               permission.
             </p>
@@ -58,7 +58,7 @@ function Terms() {
             <h2>5. Limitation of Liability</h2>
             <p>
               This website is provided on an "as is" basis. To the fullest
-              extent permitted by law, Granx Industries Pvt Ltd is not liable
+              extent permitted by law, Hygran Polymers Pvt Ltd is not liable
               for any loss or damage arising from your use of the site or
               reliance on information published on it.
             </p>
@@ -86,7 +86,7 @@ function Terms() {
 
             <h2>9. Contact</h2>
             <p>
-              Granx Industries Pvt Ltd
+              Hygran Polymers Pvt Ltd
               <br />
               SY No 651, Lal Gadi Malakpet, Shamirpet, Medchal Malkajgiri,
               Hyderabad 500078, Telangana, India

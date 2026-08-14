@@ -15,14 +15,14 @@ import Terms from './pages/Terms'
 import './App.css'
 
 const titles = {
-  '/': 'Granx Industries Pvt Ltd | Premium PVC Granules Manufacturer',
-  '/about': 'About Us | Granx Industries Pvt Ltd',
-  '/products': 'Our Products | Granx Industries Pvt Ltd',
-  '/contact': 'Contact Us | Granx Industries Pvt Ltd',
-  '/brochure': 'Request Brochure | Granx Industries Pvt Ltd',
-  '/careers': 'Careers | Granx Industries Pvt Ltd',
-  '/privacy-policy': 'Privacy Policy | Granx Industries Pvt Ltd',
-  '/terms-of-use': 'Terms of Use | Granx Industries Pvt Ltd',
+  '/': 'Hygran Polymers Pvt Ltd | Premium PVC Granules Manufacturer',
+  '/about': 'About Us | Hygran Polymers Pvt Ltd',
+  '/products': 'Our Products | Hygran Polymers Pvt Ltd',
+  '/contact': 'Contact Us | Hygran Polymers Pvt Ltd',
+  '/brochure': 'Request Brochure | Hygran Polymers Pvt Ltd',
+  '/careers': 'Careers | Hygran Polymers Pvt Ltd',
+  '/privacy-policy': 'Privacy Policy | Hygran Polymers Pvt Ltd',
+  '/terms-of-use': 'Terms of Use | Hygran Polymers Pvt Ltd',
 }
 
 function App() {
@@ -31,7 +31,7 @@ function App() {
   useEffect(() => {
     window.scrollTo(0, 0)
     document.title =
-      titles[pathname] || 'Granx Industries Pvt Ltd | PVC Granules'
+      titles[pathname] || 'Hygran Polymers Pvt Ltd | PVC Granules'
   }, [pathname])
 
   return (

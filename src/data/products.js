@@ -1,4 +1,4 @@
-// Product catalog for Granx Industries Pvt Ltd.
+// Product catalog for Hygran Polymers Pvt Ltd.
 // NOTE: Spec values below are typical-range placeholders. Replace with
 // your actual grade datasheet values before going live.
 
