@@ -113,6 +113,37 @@ function Navbar() {
           </button>
         </div>
 
+        <div className="nav-drawer-search">
+          <input
+            type="search"
+            placeholder="Search products…"
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+            aria-label="Search products"
+          />
+          {query.trim() && (
+            <div className="search-results">
+              {matches.length > 0 ? (
+                matches.map((p) => (
+                  <a
+                    key={p.id}
+                    href={`/products/${p.id}`}
+                    onClick={(e) => {
+                      e.preventDefault()
+                      goTo(p.id)
+                      closeMenu()
+                    }}
+                  >
+                    {p.name} <small>({p.gradeCode})</small>
+                  </a>
+                ))
+              ) : (
+                <div className="no-match">No matching products</div>
+              )}
+            </div>
+          )}
+        </div>
+
         <ul className="nav-drawer-links" onClick={closeMenu}>
           <li>
             <NavLink to="/" end>
