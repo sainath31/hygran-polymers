@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import logoLight from '../assets/logo-light.svg'
+import logoLight from '../assets/hygran-logo.svg'
 
 // Social profiles. Update hrefs when the company pages are created
 const socials = [

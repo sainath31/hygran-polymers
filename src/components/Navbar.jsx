@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { NavLink, Link, useNavigate } from 'react-router-dom'
 import products from '../data/products'
-import logoLight from '../assets/logo-light.svg'
+import logoLight from '../assets/hygran-logo.svg'
 
 function Navbar() {
   const [query, setQuery] = useState('')
