@@ -3,16 +3,13 @@
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(42, 10, 78, 0.55);
-  backdrop-filter: blur(18px);
-  -webkit-backdrop-filter: blur(18px);
+  background: linear-gradient(160deg, var(--color-primary-deeper), var(--color-primary-dark));
   color: #fff;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  transition: background 0.3s, box-shadow 0.3s;
+  transition: box-shadow 0.3s;
 }
 
 .navbar.scrolled {
-  background: rgba(42, 10, 78, 0.97);
   box-shadow: 0 8px 28px rgba(42, 10, 78, 0.4);
 }
 
