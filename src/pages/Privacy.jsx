@@ -24,7 +24,7 @@ function Privacy() {
 
             <h2>1. Introduction</h2>
             <p>
-              Granx Industries Pvt Ltd ("we", "us", "our") operates this
+              Hygran Polymers Pvt Ltd ("we", "us", "our") operates this
               website from Hyderabad, Telangana, India. This policy explains
               what information we collect through the site, why we collect it,
               and how we handle it.
@@ -96,7 +96,7 @@ function Privacy() {
 
             <h2>9. Contact Us</h2>
             <p>
-              Granx Industries Pvt Ltd
+              Hygran Polymers Pvt Ltd
               <br />
               SY No 651, Lal Gadi Malakpet, Shamirpet, Medchal Malkajgiri,
               Hyderabad 500078, Telangana, India

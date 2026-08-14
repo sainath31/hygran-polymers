@@ -195,7 +195,7 @@ function Contact() {
             <h3>Company Information</h3>
             <p>
               <strong>Company Name</strong>
-              Granx Industries Pvt Ltd
+              Hygran Polymers Pvt Ltd
             </p>
             <p>
               <strong>Manufacturing Unit</strong>

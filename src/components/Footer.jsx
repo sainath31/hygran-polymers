@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import logoLight from '../assets/logo-light.svg'
 
 // Social profiles. Update hrefs when the company pages are created
 const socials = [
@@ -57,11 +58,7 @@ function Footer() {
         <div className="footer-grid">
           <div className="footer-brand">
             <div className="footer-logo">
-              <span className="brand-mark">G</span>
-              <span>
-                Granx Industries
-                <small>Formulated for Excellence.</small>
-              </span>
+              <img src={logoLight} alt="Hygran Polymers" className="brand-logo" style={{ height: '52px' }} />
             </div>
             <p>
               Leading manufacturer of PVC granules and compounds, delivering
@@ -141,7 +138,7 @@ function Footer() {
             <Link to="/terms-of-use">Terms of Use</Link>
           </div>
           <span>
-            © {new Date().getFullYear()} Granx Industries Pvt Ltd. All
+            © {new Date().getFullYear()} Hygran Polymers Pvt Ltd. All
             rights reserved.
           </span>
         </div>

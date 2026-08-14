@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { NavLink, Link, useNavigate } from 'react-router-dom'
 import products from '../data/products'
+import logoLight from '../assets/logo-light.svg'
 
 function Navbar() {
   const [query, setQuery] = useState('')
@@ -46,11 +47,7 @@ function Navbar() {
     <header className={`navbar${scrolled ? ' scrolled' : ''}`}>
       <div className="container navbar-inner">
         <Link to="/" className="brand" onClick={closeMenu}>
-          <span className="brand-mark">G</span>
-          <span className="brand-text">
-            Granx Industries
-            <small>Formulated for Excellence.</small>
-          </span>
+          <img src={logoLight} alt="Hygran Polymers" className="brand-logo" />
         </Link>
 
         <div className="nav-center">
@@ -102,7 +99,7 @@ function Navbar() {
 
       <aside className={`nav-drawer${menuOpen ? ' open' : ''}`}>
         <div className="nav-drawer-head">
-          <span className="brand-mark">G</span>
+          <img src={logoLight} alt="Hygran Polymers" className="brand-logo" style={{ height: '36px' }} />
           <button
             type="button"
             className="nav-drawer-close"

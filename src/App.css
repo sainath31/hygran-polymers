@@ -64,6 +64,12 @@
   letter-spacing: 0.14em;
 }
 
+.brand-logo {
+  height: 44px;
+  width: auto;
+  display: block;
+}
+
 /* Slide-in navigation drawer */
 .nav-backdrop {
   position: fixed;
@@ -1622,8 +1628,8 @@
     gap: 0.7rem;
   }
 
-  .brand-text {
-    display: none;
+  .brand-logo {
+    height: 32px;
   }
 
   .nav-center {
@@ -1687,8 +1693,8 @@
     padding: 3rem 0;
   }
 
-  .brand span.brand-text {
-    font-size: 0.85rem;
+  .brand .brand-logo {
+    height: 38px;
   }
 }
 

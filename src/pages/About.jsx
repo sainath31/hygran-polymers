@@ -23,7 +23,7 @@ function About() {
       >
         <div className="container">
           <h1>About Us</h1>
-          <p>Company profile of Granx Industries Pvt Ltd</p>
+          <p>Company profile of Hygran Polymers Pvt Ltd</p>
         </div>
       </section>
 
@@ -33,7 +33,7 @@ function About() {
             <div>
               <h2>Company Overview</h2>
               <p>
-                Granx Industries Pvt Ltd is a leading manufacturer of PVC
+                Hygran Polymers Pvt Ltd is a leading manufacturer of PVC
                 granules and compounds delivering customized polymer solutions
                 for diverse industrial applications.
               </p>
