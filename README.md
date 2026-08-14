@@ -1,6 +1,6 @@
-# Granx Industries Pvt Ltd — Company Website
+# Hygran Polymers Pvt Ltd — Company Website
 
-Official website for **Granx Industries Pvt Ltd**, a PVC granules and compounds manufacturer based in Hyderabad, India. Built as a React SPA and deployed on GitHub Pages.
+Official website for **Hygran Polymers Pvt Ltd**, a PVC granules and compounds manufacturer based in Hyderabad, India. Built as a React SPA and deployed on GitHub Pages.
 
 ---
 
@@ -42,9 +42,9 @@ Pushes to `master` automatically trigger the GitHub Actions workflow (`.github/w
 
 The workflow includes two retry steps on the deploy job to handle transient GitHub Pages API failures.
 
-**Live URL:** `https://sainath31.github.io/granx-industries/`
+**Live URL:** `https://sainath31.github.io/hygran-polymers/`
 
-> The `base` path in `vite.config.js` (`/granx-industries/`) must match the GitHub repository name. If the repository is ever renamed, update `base` to the new name or the deployed site's assets will 404.
+> The `base` path in `vite.config.js` (`/hygran-polymers/`) must match the GitHub repository name. If the repository is ever renamed, update `base` to the new name or the deployed site's assets will 404.
 
 ---
 
@@ -52,7 +52,7 @@ The workflow includes two retry steps on the deploy job to handle transient GitH
 
 | | |
 |---|---|
-| **Company** | Granx Industries Pvt Ltd |
+| **Company** | Hygran Polymers Pvt Ltd |
 | **Tagline** | Formulated for Excellence. |
 | **Business** | PVC granules & compounds manufacturer |
 | **Location** | SY No 651, Lal Gadi Malakpet, Shamirpet, Medchal Malkajgiri, Hyderabad — 500078, Telangana, India |
@@ -68,15 +68,15 @@ All colors are defined as CSS custom properties in `src/index.css`.
 
 | Token | Value | Usage |
 |---|---|---|
-The brand palette follows FedEx-style **purple + orange**: purple carries the structure (nav, dark bands, headings, primary buttons), orange is the energetic accent (eyebrows, highlights, hover, hero accent word, progress bars).
+The brand palette follows **purple + orange**: purple carries the structure (nav, dark bands, headings, primary buttons), orange is the energetic accent (eyebrows, highlights, hover, hero accent word, progress bars).
 
 | Token | Value | Usage |
 |---|---|---|
-| `--color-primary` | `#4D148C` | FedEx purple — main brand color, buttons, links |
+| `--color-primary` | `#4D148C` | Main brand color, buttons, links |
 | `--color-primary-dark` | `#3A0F6B` | Darker purple — headings, hover states |
 | `--color-primary-deeper` | `#2A0A4E` | Deepest purple — hero overlays, dark bands |
 | `--color-primary-light` | `#6B29B5` | Lighter purple — gradients |
-| `--color-accent` | `#FF6600` | FedEx orange — accent text, shimmer, progress bars |
+| `--color-accent` | `#FF6600` | Orange — accent text, shimmer, progress bars |
 | `--color-accent-dark` | `#E55A00` | Darker orange — secondary accents |
 | `--color-ink` | `#26212E` | Purple-grey — body text |
 | `--color-muted` | `#6A6475` | Muted purple-grey — secondary text |
@@ -108,6 +108,7 @@ Both fonts are loaded from Google Fonts via `index.html`.
 | Breakpoint | Usage |
 |---|---|
 | `max-width: 900px` | Tablet layout adjustments |
+| `max-width: 640px` | Hide navbar search (moved to drawer) |
 | `max-width: 560px` | Mobile layout adjustments |
 
 ---
@@ -128,7 +129,7 @@ Both fonts are loaded from Google Fonts via `index.html`.
 
 | Component | File | Description |
 |---|---|---|
-| `Navbar` | `src/components/Navbar.jsx` | Sticky glassmorphism nav with search, mobile hamburger |
+| `Navbar` | `src/components/Navbar.jsx` | Sticky nav with search, mobile hamburger drawer |
 | `Footer` | `src/components/Footer.jsx` | Brand, social links, explore links, contact & address |
 | `HeroSlider` | `src/components/HeroSlider.jsx` | Full-bleed crossfading slider with ken-burns, touch swipe, progress bars |
 | `IndustriesShowcase` | `src/components/IndustriesShowcase.jsx` | Horizontal scroll filmstrip with drag, auto-advance, arrow controls |
@@ -159,32 +160,6 @@ Wire & Cable · Footwear · Automotive · Construction · Medical · Industrial
 
 ---
 
-## Key Design Decisions
-
-### Premium-first visual language
-The design draws from Tesla's web principles applied to a B2B manufacturing context — restraint over decoration, confident type scale, photography doing the heavy lifting.
-
-- **Hero typography** at `clamp(2.6rem, 5.8vw, 4.8rem)` with `-0.03em` letter-spacing — deliberately large and sparse
-- **Section headings** stand alone with no underline decorators or subtitle paragraphs
-- **Stats band** uses oversized numbers with uppercase micro-labels — the number is the headline
-- **Feature cards** (Why Choose Us, Core Values) show title and text only, no icons
-
-### Hero slider
-Three slides, 6.4 s autoplay, ken-burns zoom on the active background image, crossfade transition between slides. Pauses on hover and touch. Progress bars at the bottom indicate slide timing.
-
-**CTAs:** Two ghost buttons per slide — "Request a Quote" (slightly filled white) and "Contact our team" (outlined white). No purple gradient on imagery. On mobile (`≤560px`) both buttons scale to tighter padding and `white-space: nowrap` to stay on one line.
-
-### Color on dark backgrounds
-Hero and dark section overlays use `rgba(42,10,78,…)` — derived from `--color-primary-deeper` — so the brand purple saturates the imagery rather than a generic black. The accent orange (`#FF6600`) appears in progress bars and the shimmer animation on the headline accent word.
-
-### Navigation
-Sticky with `backdrop-filter: blur(14px)`. Becomes more opaque on scroll. All navigation lives in a slide-in drawer opened from the hamburger, with the Products entry expanding to the four product families. Active links highlight in orange. Brand mark is a 40×40 purple rounded tile with the letter "G".
-
-### WhatsApp integration
-Floating button links to `https://wa.me/919949275566` with a pre-filled enquiry message. The footer social icon links to the same number and opens in a new tab.
-
----
-
 ## Content To Update Before Going Live
 
 - [ ] Replace placeholder phone numbers (`+91 XXXXX XXXXX`) in the footer and contact page with real numbers
@@ -198,7 +173,7 @@ Floating button links to `https://wa.me/919949275566` with a pre-filled enquiry 
 ## Repository Structure
 
 ```
-granx-industries/
+hygran-polymers/
 ├── public/
 ├── src/
 │   ├── assets/          # Images (hero, product, application photos)

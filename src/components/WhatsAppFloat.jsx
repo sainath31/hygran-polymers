@@ -1,4 +1,4 @@
-// Replace with Granx Industries WhatsApp number (digits only, with country code)
+// Replace with Hygran Polymers WhatsApp number (digits only, with country code)
 const WHATSAPP_NUMBER = '919949275566'
 const WHATSAPP_MESSAGE = 'Hello, I would like to enquire about your PVC granules.'
 
