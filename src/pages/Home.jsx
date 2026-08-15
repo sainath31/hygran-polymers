@@ -206,7 +206,7 @@ function Home() {
           <Reveal>
             <img
               src={sustainability}
-              alt="Sustainable PVC granules"
+              alt="Sustainable polymer manufacturing at Hygran Polymers Hyderabad"
               loading="lazy"
             />
           </Reveal>
