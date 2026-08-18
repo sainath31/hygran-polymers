@@ -252,12 +252,12 @@
   padding-bottom: 1rem;
 }
 
-/* Desktop nav — logo + links on left, search centered */
+/* Desktop nav — links on the right */
 .nav-desktop {
   display: flex;
   align-items: center;
   gap: 0.1rem;
-  margin-left: 0.5rem;
+  margin-left: auto;
 }
 
 /* Search bar — absolutely centered in the navbar */
