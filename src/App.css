@@ -14,7 +14,6 @@
 }
 
 .navbar-inner {
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1713,23 +1712,30 @@
   }
 
   .footer-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 2.2rem;
   }
 
 }
 
 /* Hide desktop nav on mobile, show hamburger */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .nav-desktop {
     display: none;
   }
 }
 
 /* Hide hamburger on desktop */
-@media (min-width: 769px) {
+@media (min-width: 901px) {
   .nav-toggle {
     display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 1.8rem;
   }
 }
 
