@@ -14,9 +14,9 @@
 }
 
 .navbar-inner {
+  position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   gap: 1.5rem;
   min-height: 78px;
   max-width: 100%;
@@ -252,13 +252,28 @@
   padding-bottom: 1rem;
 }
 
-/* Desktop nav — logo left, links center, CTA right */
+/* Desktop nav — logo + links on left, search centered */
 .nav-desktop {
   display: flex;
   align-items: center;
   gap: 0.1rem;
-  margin-left: auto;
-  margin-right: 1.5rem;
+  margin-left: 0.5rem;
+}
+
+/* Search bar — absolutely centered in the navbar */
+.nav-center-search {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: clamp(180px, 22vw, 320px);
+  z-index: 10;
+}
+
+@media (max-width: 900px) {
+  .nav-center-search {
+    display: none;
+  }
 }
 
 .nav-link {
@@ -296,34 +311,6 @@
   opacity: 1;
 }
 
-/* Request a Quote CTA */
-.nav-cta {
-  display: inline-flex;
-  align-items: center;
-  padding: 0.55rem 1.25rem;
-  background: var(--color-accent);
-  color: #fff !important;
-  font-size: 0.88rem;
-  font-weight: 600;
-  font-family: var(--font-body);
-  letter-spacing: 0.03em;
-  border-radius: 6px;
-  white-space: nowrap;
-  transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
-  box-shadow: 0 2px 12px rgba(249, 115, 22, 0.35);
-}
-
-.nav-cta:hover {
-  background: #ea6610;
-  transform: translateY(-1px);
-  box-shadow: 0 4px 18px rgba(249, 115, 22, 0.5);
-}
-
-@media (max-width: 900px) {
-  .nav-cta {
-    display: none;
-  }
-}
 
 /* Products dropdown */
 .nav-dropdown-wrap {
