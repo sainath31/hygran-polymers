@@ -1438,7 +1438,7 @@
     radial-gradient(ellipse 900px 420px at 85% -10%, rgba(107, 41, 181, 0.35), transparent),
     linear-gradient(160deg, var(--color-primary-deeper), var(--color-primary-dark));
   color: rgba(255, 255, 255, 0.8);
-  padding: 4rem 0 1.4rem;
+  padding: 4rem 2rem 1.4rem;
   margin-top: auto;
   overflow: hidden;
 }
@@ -1455,10 +1455,6 @@
     var(--color-primary-light) 55%,
     transparent
   );
-}
-
-.footer-inner {
-  padding: 0 2rem;
 }
 
 .footer-grid {
