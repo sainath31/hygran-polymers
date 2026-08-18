@@ -54,7 +54,7 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="footer-accent" aria-hidden="true" />
-      <div className="container">
+      <div className="footer-inner">
         <div className="footer-grid">
           <div className="footer-brand">
             <div className="footer-logo">
@@ -123,7 +123,7 @@ function Footer() {
           </div>
         </div>
 
-        <div className="footer-bottom">
+        <div className="footer-bottom" style={{maxWidth:'100%'}}>
           <button
             type="button"
             className="back-to-top"
