@@ -49,53 +49,6 @@ function Navbar() {
           <img src={logoLight} alt="Hygran Polymers" className="brand-logo" />
         </Link>
 
-        {/* Desktop nav links — left, right after logo */}
-        <nav className="nav-desktop" aria-label="Main navigation">
-          <NavLink to="/" end className="nav-link">Home</NavLink>
-          <NavLink to="/about" className="nav-link">About</NavLink>
-          <div className="nav-dropdown-wrap">
-            <NavLink to="/products" className="nav-link">
-              Products
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" className="nav-chevron"><polyline points="6 9 12 15 18 9"/></svg>
-            </NavLink>
-            <div className="nav-dropdown">
-              {products.map((p) => (
-                <NavLink key={p.id} to={`/products/${p.id}`} className="nav-dropdown-item">
-                  {p.name}
-                </NavLink>
-              ))}
-            </div>
-          </div>
-          <NavLink to="/careers" className="nav-link">Careers</NavLink>
-          <NavLink to="/contact" className="nav-link">Contact</NavLink>
-        </nav>
-
-        {/* Search — centered absolutely in the navbar */}
-        <div className="nav-center-search">
-          <div className="nav-search">
-            <input
-              type="search"
-              placeholder="Search products…"
-              value={query}
-              onChange={(e) => setQuery(e.target.value)}
-              aria-label="Search products"
-            />
-            {query.trim() && (
-              <div className="search-results">
-                {matches.length > 0 ? (
-                  matches.map((p) => (
-                    <a key={p.id} href={`/products/${p.id}`}
-                      onClick={(e) => { e.preventDefault(); goTo(p.id) }}>
-                      {p.name} <small>({p.gradeCode})</small>
-                    </a>
-                  ))
-                ) : (
-                  <div className="no-match">No matching products</div>
-                )}
-              </div>
-            )}
-          </div>
-        </div>
 
         {/* Hamburger — mobile only, hidden on desktop via CSS */}
         <button

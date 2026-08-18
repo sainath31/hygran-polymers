@@ -1756,16 +1756,13 @@
 
 }
 
-/* Hide desktop nav on mobile, show hamburger */
-@media (max-width: 900px) {
-  .nav-desktop {
-    display: none;
-  }
+/* Desktop nav hidden — all nav lives in the hamburger drawer */
+.nav-desktop {
+  display: none;
 }
 
-/* Hide hamburger on desktop */
-@media (min-width: 901px) {
-  .nav-toggle {
+@media (max-width: 900px) {
+  .nav-center-search {
     display: none;
   }
 }
