@@ -42,7 +42,7 @@ function Navbar() {
 
   return (
     <header className={`navbar${scrolled ? ' scrolled' : ''}`}>
-      <div className="container navbar-inner">
+      <div className="navbar-inner">
 
         {/* Logo — always left */}
         <Link to="/" className="brand" onClick={closeMenu}>
